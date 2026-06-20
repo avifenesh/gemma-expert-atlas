@@ -109,8 +109,14 @@ RUN_CALIBRATION=1 npm run pipeline:surgery
   `data/personal_agent_eval/tasks.jsonl`
 - Corpus inputs: `data/personal_agent_corpora/*.txt`,
   `data/theme_corpora/*.txt`
-- Dashboard-ready routing data: `public/data/personal_agent_routing_traces.json`,
-  `public/data/theme_routing_traces.json`
+- Dashboard-ready routing indexes:
+  `public/data/personal_agent_routing_traces.json`,
+  `public/data/theme_routing_traces.json`,
+  `public/data/routing_traces.json`
+- Full per-trace routing arrays:
+  `public/data/personal_agent_traces/*.json`,
+  `public/data/theme_traces/*.json`,
+  `public/data/routing_trace_*.json`
 - Expert usage summaries: `data/expert_usage_analysis.json`,
   `public/data/expert_usage_analysis.json`
 - Surgery plans and reports: `data/surgery_experiments/`
@@ -142,6 +148,20 @@ The generated plan contains four variants:
 - `trim_cold_v1`: reversible removal/disable of conservative cold candidates
 - `merge_low_use_v1`: merge low-use experts only after weight-similarity checks
 - `add_specialist_v1`: reserved for router-adapted specialist capacity
+
+## Blend Probes
+
+Hard same-layer substitution is a blunt guardrail test. The next gentler probe
+uses `scripts/blend_hf_expert.py` on the HF/safetensors checkpoint:
+
+```bash
+npm run blend:hf-expert -- --base-expert L08.E054 --donor-expert L08.E018 --donor-weight 0.25
+```
+
+The script copies the checkpoint with reflinks when possible, then patches only
+the target expert slices as `(1 - w) * base + w * donor`. After blending,
+quantize the copied HF checkpoint to GGUF and run focused instruction-following,
+personalization-memory, coding, and tool-recovery guards before the full bank.
 
 ## Eval Gates
 

@@ -21,17 +21,36 @@ DEFAULT_PUBLIC_OUT = ROOT / "public" / "data" / "expert_usage_analysis.json"
 
 def load_bundle(path: Path) -> dict[str, Any]:
     if path.exists():
-        return json.loads(path.read_text())
+        bundle = json.loads(path.read_text())
+        bundle["_bundle_path"] = str(path)
+        return bundle
     if path == DEFAULT_TRACES and FALLBACK_TRACES.exists():
-        return json.loads(FALLBACK_TRACES.read_text())
+        bundle = json.loads(FALLBACK_TRACES.read_text())
+        bundle["_bundle_path"] = str(FALLBACK_TRACES)
+        return bundle
     raise SystemExit(f"trace bundle not found: {path}")
+
+
+def resolve_trace(bundle: dict[str, Any], trace: dict[str, Any]) -> dict[str, Any]:
+    if "experts" in trace:
+        return trace
+    raw_path = trace.get("path")
+    if not isinstance(raw_path, str):
+        raise SystemExit(f"trace reference missing path: {trace}")
+    if raw_path.startswith("/data/"):
+        path = ROOT / "public" / "data" / raw_path.removeprefix("/data/")
+    else:
+        path = Path(raw_path)
+        if not path.is_absolute():
+            path = Path(bundle.get("_bundle_path", ".")).parent / path
+    return json.loads(path.read_text())
 
 
 def iter_runs(bundle: dict[str, Any]) -> list[dict[str, Any]]:
     runs: list[dict[str, Any]] = []
     for theme, mode_traces in bundle.get("traces", {}).items():
         for mode, trace in mode_traces.items():
-            runs.append({"theme": theme, "mode": mode, "trace": trace, "name": f"{theme}:{mode}"})
+            runs.append({"theme": theme, "mode": mode, "trace": resolve_trace(bundle, trace), "name": f"{theme}:{mode}"})
     return runs
 
 

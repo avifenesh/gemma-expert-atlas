@@ -799,6 +799,56 @@ select:focus-visible {
   border-radius: 3px 3px 0 0;
 }
 
+.trace-load-notice {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 0;
+  min-height: 70px;
+  padding: 14px 16px;
+  border: 1px solid rgba(76, 199, 176, 0.2);
+  background:
+    linear-gradient(90deg, rgba(76, 199, 176, 0.11), rgba(170, 184, 171, 0.06)),
+    rgba(11, 16, 14, 0.92);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.trace-load-notice.is-error {
+  border-color: rgba(227, 107, 93, 0.35);
+  background:
+    linear-gradient(90deg, rgba(227, 107, 93, 0.14), rgba(170, 184, 171, 0.04)),
+    rgba(11, 16, 14, 0.94);
+}
+
+.trace-load-notice h2,
+.trace-load-notice p {
+  margin: 0;
+}
+
+.trace-load-notice h2 {
+  color: var(--text);
+  font-size: 13px;
+}
+
+.trace-load-notice p {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.trace-load-notice span {
+  flex: 0 0 auto;
+  padding: 6px 9px;
+  color: #a7e6d8;
+  border: 1px solid rgba(76, 199, 176, 0.28);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
 .least-used {
   min-width: 0;
   padding: 15px;

@@ -34,6 +34,7 @@
     "mask:runtime-evict-static": "python3 scripts/mask_gguf_experts.py --stage runtime_evict_after_prefix_v0 --expert-file data/surgery_experiments/runtime_evict_after_prefix_v0.txt",
     "mask:combined-static": "python3 scripts/mask_gguf_experts.py --stage combined_early_then_silent_plus_never_active_v0 --expert-file data/surgery_experiments/combined_early_then_silent_plus_never_active_v0.txt",
     "replace:expert": "python3 scripts/replace_gguf_expert.py",
+    "blend:hf-expert": "python3 scripts/blend_hf_expert.py",
     "trim:global-probe": "python3 scripts/trim_gguf_global_experts.py --expert-index 116",
     "timeline:routing": "python3 scripts/run_routing_timeline.py",
     "timeline:personal-agent": "scripts/run_personal_agent_timelines.sh",

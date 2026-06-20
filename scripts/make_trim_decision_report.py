@@ -39,6 +39,23 @@ def parse_bundle_arg(value: str) -> tuple[str, Path]:
     return label, Path(raw_path)
 
 
+def resolve_trace_ref(bundle_path: Path, trace: dict[str, Any]) -> dict[str, Any]:
+    if "experts" in trace:
+        return trace
+    raw_path = trace.get("path")
+    if not isinstance(raw_path, str):
+        return trace
+    if raw_path.startswith("/data/"):
+        path = ROOT / "public" / "data" / raw_path.removeprefix("/data/")
+    else:
+        path = Path(raw_path)
+        if not path.is_absolute():
+            path = bundle_path.parent / path
+    if not path.exists():
+        return trace
+    return read_json(path)
+
+
 def iter_bundle_traces(label: str, path: Path) -> list[dict[str, Any]]:
     if not path.exists():
         return []
@@ -56,6 +73,7 @@ def iter_bundle_traces(label: str, path: Path) -> list[dict[str, Any]]:
         if not isinstance(value, dict):
             continue
         for mode, trace in value.items():
+            trace = resolve_trace_ref(path, trace) if isinstance(trace, dict) else trace
             if isinstance(trace, dict) and "experts" in trace:
                 records.append({"dataset": label, "name": f"{label}:{key}:{mode}", "theme": key, "mode": mode, "trace": trace})
     return records

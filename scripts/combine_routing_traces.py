@@ -9,16 +9,28 @@ import pathlib
 from typing import Any
 
 
-def load_trace(spec: str) -> tuple[str, dict[str, Any]]:
+PUBLIC_ROOT = pathlib.Path("public").resolve()
+
+
+def public_url(path: pathlib.Path) -> str:
+    resolved = path.resolve()
+    try:
+        return "/" + resolved.relative_to(PUBLIC_ROOT).as_posix()
+    except ValueError:
+        return path.as_posix()
+
+
+def load_trace(spec: str) -> tuple[str, pathlib.Path, dict[str, Any]]:
     if "=" not in spec:
         raise ValueError("trace spec must be label=path")
     label, path = spec.split("=", 1)
-    trace = json.loads(pathlib.Path(path).read_text())
+    trace_path = pathlib.Path(path)
+    trace = json.loads(trace_path.read_text())
     trace["label"] = label
-    return label, trace
+    return label, trace_path, trace
 
 
-def compare(on: dict[str, Any], off: dict[str, Any]) -> dict[str, Any]:
+def compare(on: dict[str, Any], off: dict[str, Any], include_experts: bool) -> dict[str, Any]:
     off_by_id = {expert["id"]: expert for expert in off["experts"]}
     experts = []
     for expert in on["experts"]:
@@ -36,10 +48,21 @@ def compare(on: dict[str, Any], off: dict[str, Any]) -> dict[str, Any]:
                 "delta_share": expert["share"] - base["share"],
             }
         )
-    return {
+    comparison: dict[str, Any] = {
         "top_reasoning_on": sorted(experts, key=lambda item: item["delta_count"], reverse=True)[:24],
         "top_reasoning_off": sorted(experts, key=lambda item: item["delta_count"])[:24],
-        "experts": experts,
+    }
+    if include_experts:
+        comparison["experts"] = experts
+    return comparison
+
+
+def trace_reference(label: str, path: pathlib.Path, trace: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "label": label,
+        "path": public_url(path),
+        "source": trace.get("source", {}),
+        "summary": trace.get("summary", {}),
     }
 
 
@@ -48,17 +71,26 @@ def main() -> None:
     parser.add_argument("--trace", action="append", required=True, help="label=path")
     parser.add_argument("--default", default="mixed")
     parser.add_argument("--out", type=pathlib.Path, default=pathlib.Path("public/data/routing_traces.json"))
+    parser.add_argument("--embed-traces", action="store_true", help="Embed full traces instead of lightweight references.")
+    parser.add_argument("--embed-comparison-experts", action="store_true", help="Embed full reasoning comparison expert lists.")
     args = parser.parse_args()
 
-    traces = dict(load_trace(spec) for spec in args.trace)
+    loaded = [load_trace(spec) for spec in args.trace]
+    traces = {label: trace for label, _path, trace in loaded}
+    trace_refs = {label: trace_reference(label, path, trace) for label, path, trace in loaded}
     bundle: dict[str, Any] = {
-        "schema_version": 1,
+        "schema_version": 2,
+        "bundle_kind": "embedded_traces" if args.embed_traces else "lazy_trace_index",
         "default_trace": args.default,
-        "traces": traces,
+        "traces": traces if args.embed_traces else trace_refs,
         "comparisons": {},
     }
     if "reasoning_on" in traces and "reasoning_off" in traces:
-        bundle["comparisons"]["reasoning_on_vs_off"] = compare(traces["reasoning_on"], traces["reasoning_off"])
+        bundle["comparisons"]["reasoning_on_vs_off"] = compare(
+            traces["reasoning_on"],
+            traces["reasoning_off"],
+            args.embed_comparison_experts,
+        )
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(bundle, indent=2, sort_keys=True) + "\n")

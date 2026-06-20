@@ -193,15 +193,25 @@ type ReasoningComparison = {
 
 type ThemeMode = "reasoning_off" | "reasoning_on";
 
+type TraceReference = {
+  label: string;
+  path: string;
+  source?: RoutingTrace["source"];
+  summary: RoutingTrace["summary"];
+  theme?: string;
+  mode?: ThemeMode;
+};
+
 type ThemeBundle = {
   schema_version: number;
+  bundle_kind?: "embedded_traces" | "lazy_trace_index";
   summary: {
     theme_count: number;
     trace_count: number;
     themes: string[];
   };
   themes: Record<string, { label: string; modes: ThemeMode[] }>;
-  traces: Record<string, Partial<Record<ThemeMode, RoutingTrace>>>;
+  traces: Record<string, Partial<Record<ThemeMode, TraceReference | RoutingTrace>>>;
   comparisons: Record<string, ReasoningComparison>;
 };
 
@@ -298,11 +308,18 @@ type RoutingTimelineSummary = {
 
 type RoutingBundle = {
   schema_version: number;
+  bundle_kind?: "embedded_traces" | "lazy_trace_index";
   default_trace: string;
-  traces: Record<string, RoutingTrace>;
+  traces: Record<string, TraceReference | RoutingTrace>;
   comparisons?: {
     reasoning_on_vs_off?: ReasoningComparison;
   };
+};
+
+type TraceLoadState = {
+  trace: RoutingTrace | null;
+  loading: boolean;
+  error: string | null;
 };
 
 type ViewMode = "shard" | "attention" | "offset" | "routing" | "cold";
@@ -321,6 +338,20 @@ const routingBundleUrl = "/data/routing_traces.json";
 const themeBundleUrl = "/data/personal_agent_routing_traces.json";
 const routingTimelineUrl = "/data/routing_timeline.json";
 const routingTimelineSummaryUrl = "/data/routing_timeline_summary.json";
+
+function isFullTrace(value: TraceReference | RoutingTrace | null | undefined): value is RoutingTrace {
+  return Boolean(value && "experts" in value && Array.isArray(value.experts));
+}
+
+function traceRefUrl(value: TraceReference | RoutingTrace | null | undefined): string | null {
+  if (!value) return null;
+  if (isFullTrace(value)) return null;
+  return value.path;
+}
+
+function traceSummary(value: TraceReference | RoutingTrace | null | undefined): RoutingTrace["summary"] | null {
+  return value?.summary ?? null;
+}
 
 function formatNumber(value: number): string {
   return new Intl.NumberFormat("en-US").format(value);
@@ -1459,6 +1490,32 @@ function ThemeMatrix({
   );
 }
 
+function TraceLoadNotice({
+  loading,
+  error,
+  summary,
+}: {
+  loading: boolean;
+  error: string | null;
+  summary: RoutingTrace["summary"] | null;
+}) {
+  return (
+    <section className={error ? "trace-load-notice is-error" : "trace-load-notice"} data-testid="trace-load-notice">
+      <div>
+        <h2>{error ? "Trace load failed" : "Loading selected trace"}</h2>
+        <p>
+          {error
+            ? error
+            : summary
+              ? `${formatCompact(summary.total_selections)} route selections are indexed; fetching full expert counts.`
+              : "Fetching full expert counts for the selected lens."}
+        </p>
+      </div>
+      <span>{loading ? "lazy load" : "check artifact"}</span>
+    </section>
+  );
+}
+
 function LoadingState() {
   return (
     <main className="loading-state">
@@ -1489,6 +1546,9 @@ export function App() {
   const [themeBundle, setThemeBundle] = useState<ThemeBundle | null>(null);
   const [routingTimeline, setRoutingTimeline] = useState<RoutingTimeline | null>(null);
   const [routingTimelineSummary, setRoutingTimelineSummary] = useState<RoutingTimelineSummary | null>(null);
+  const [traceCache, setTraceCache] = useState<Record<string, RoutingTrace>>({});
+  const [activeTraceLoading, setActiveTraceLoading] = useState(false);
+  const [activeTraceError, setActiveTraceError] = useState<string | null>(null);
   const [selectedTraceKey, setSelectedTraceKey] = useState("mixed");
   const [selectedThemeKey, setSelectedThemeKey] = useState("overall");
   const [selectedThemeMode, setSelectedThemeMode] = useState<ThemeMode>("reasoning_on");
@@ -1561,9 +1621,52 @@ export function App() {
       .catch(() => setRoutingTimelineSummary(null));
   }, []);
 
-  const activeThemeTrace =
-    selectedThemeKey === "overall" ? null : themeBundle?.traces[selectedThemeKey]?.[selectedThemeMode] ?? null;
-  const activeRoutingTrace = activeThemeTrace ?? routingBundle?.traces[selectedTraceKey] ?? routingTrace;
+  const activeTraceEntry =
+    selectedThemeKey === "overall"
+      ? routingBundle?.traces[selectedTraceKey] ?? null
+      : themeBundle?.traces[selectedThemeKey]?.[selectedThemeMode] ?? null;
+  const activeTraceUrl = traceRefUrl(activeTraceEntry);
+  const cachedActiveTrace = activeTraceUrl ? traceCache[activeTraceUrl] : null;
+  const activeEmbeddedTrace = isFullTrace(activeTraceEntry) ? activeTraceEntry : null;
+
+  useEffect(() => {
+    if (!activeTraceUrl) {
+      setActiveTraceLoading(false);
+      setActiveTraceError(null);
+      return;
+    }
+    if (cachedActiveTrace) {
+      setActiveTraceLoading(false);
+      setActiveTraceError(null);
+      return;
+    }
+
+    const controller = new AbortController();
+    setActiveTraceLoading(true);
+    setActiveTraceError(null);
+    fetch(activeTraceUrl, { signal: controller.signal })
+      .then((response) => {
+        if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+        return response.json();
+      })
+      .then((data: RoutingTrace) => {
+        setTraceCache((current) => ({ ...current, [activeTraceUrl]: data }));
+        setActiveTraceLoading(false);
+      })
+      .catch((err: Error) => {
+        if (controller.signal.aborted) return;
+        setActiveTraceError(err.message);
+        setActiveTraceLoading(false);
+      });
+    return () => controller.abort();
+  }, [activeTraceUrl, cachedActiveTrace]);
+
+  const activeRoutingTrace =
+    activeEmbeddedTrace ??
+    cachedActiveTrace ??
+    (selectedThemeKey === "overall" && !routingBundle ? routingTrace : null);
+  const activeTraceSummary =
+    activeRoutingTrace?.summary ?? traceSummary(activeTraceEntry) ?? (selectedThemeKey === "overall" ? routingTrace?.summary ?? null : null);
   const traceOptions = routingBundle ? Object.keys(routingBundle.traces) : routingTrace ? [routingTrace.label ?? "mixed"] : ["pending"];
   const themeOptions = themeBundle
     ? Object.entries(themeBundle.themes).map(([key, theme]) => ({ key, label: theme.label }))
@@ -1643,6 +1746,9 @@ export function App() {
             selectedId={selected.id}
             onSelect={(expert) => setSelectedId(expert.id)}
           />
+          {activeTraceLoading || activeTraceError ? (
+            <TraceLoadNotice loading={activeTraceLoading} error={activeTraceError} summary={activeTraceSummary} />
+          ) : null}
           <RoutingStrip routingTrace={activeRoutingTrace} />
           <LeastUsedExperts routingTrace={activeRoutingTrace} onSelect={setSelectedId} />
           <RuntimeEvictionCandidates summary={routingTimelineSummary} onSelect={setSelectedId} />
