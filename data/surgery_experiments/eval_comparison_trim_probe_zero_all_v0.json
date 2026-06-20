@@ -1,0 +1,213 @@
+{
+  "baseline": "data/personal_agent_bank/runs/20260620T160351Z/results.json",
+  "created_at": "2026-06-20T16:17:37.874407+00:00",
+  "schema_version": 1,
+  "summary": [
+    {
+      "baseline_decode_tokens_per_second": 149.46696148489923,
+      "baseline_mean_score": 0.625,
+      "baseline_min_score": 0.5,
+      "config": "balanced_reasoning_off",
+      "delta_decode_tokens_per_second": -5.3619468793841065,
+      "delta_mean_score": 0.0,
+      "delta_min_score": 0.0,
+      "tasks": 8,
+      "variant_decode_tokens_per_second": 144.10501460551512,
+      "variant_mean_score": 0.625,
+      "variant_min_score": 0.5
+    },
+    {
+      "baseline_decode_tokens_per_second": 149.8242222407858,
+      "baseline_mean_score": 0.625,
+      "baseline_min_score": 0.25,
+      "config": "balanced_reasoning_on",
+      "delta_decode_tokens_per_second": -7.213493611899992,
+      "delta_mean_score": 0.0,
+      "delta_min_score": 0.0,
+      "tasks": 8,
+      "variant_decode_tokens_per_second": 142.6107286288858,
+      "variant_mean_score": 0.625,
+      "variant_min_score": 0.25
+    }
+  ],
+  "tasks": [
+    {
+      "baseline_decode_tokens_per_second": 150.47502589754393,
+      "baseline_elapsed_ms": 4574.180603027344,
+      "baseline_score": 0.75,
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "personal_research_001",
+      "variant_decode_tokens_per_second": 143.7943649763345,
+      "variant_elapsed_ms": 4854.061841964722,
+      "variant_score": 0.75
+    },
+    {
+      "baseline_decode_tokens_per_second": 150.90312470247022,
+      "baseline_elapsed_ms": 4370.762586593628,
+      "baseline_score": 0.75,
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "personal_research_002",
+      "variant_decode_tokens_per_second": 143.66147398187192,
+      "variant_elapsed_ms": 4571.134567260742,
+      "variant_score": 0.75
+    },
+    {
+      "baseline_decode_tokens_per_second": 150.31142107642557,
+      "baseline_elapsed_ms": 4067.575693130493,
+      "baseline_score": 0.5,
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "personal_research_003",
+      "variant_decode_tokens_per_second": 143.668195824705,
+      "variant_elapsed_ms": 4242.0384883880615,
+      "variant_score": 0.5
+    },
+    {
+      "baseline_decode_tokens_per_second": 148.3537822094915,
+      "baseline_elapsed_ms": 4240.340948104858,
+      "baseline_score": 0.5,
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "personal_research_004",
+      "variant_decode_tokens_per_second": 144.732372657665,
+      "variant_elapsed_ms": 4332.136631011963,
+      "variant_score": 0.5
+    },
+    {
+      "baseline_decode_tokens_per_second": 149.04953805488805,
+      "baseline_elapsed_ms": 3822.0982551574707,
+      "baseline_score": 0.75,
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "personal_research_005",
+      "variant_decode_tokens_per_second": 144.09493849303055,
+      "variant_elapsed_ms": 3948.2438564300537,
+      "variant_score": 0.75
+    },
+    {
+      "baseline_decode_tokens_per_second": 149.09666926401425,
+      "baseline_elapsed_ms": 4204.150676727295,
+      "baseline_score": 0.5,
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "personal_research_006",
+      "variant_decode_tokens_per_second": 144.43041234747741,
+      "variant_elapsed_ms": 4318.008184432983,
+      "variant_score": 0.5
+    },
+    {
+      "baseline_decode_tokens_per_second": 149.6445089426819,
+      "baseline_elapsed_ms": 4128.140926361084,
+      "baseline_score": 0.5,
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "personal_research_007",
+      "variant_decode_tokens_per_second": 144.13166290398996,
+      "variant_elapsed_ms": 4274.548292160034,
+      "variant_score": 0.5
+    },
+    {
+      "baseline_decode_tokens_per_second": 147.9016217316783,
+      "baseline_elapsed_ms": 3734.3597412109375,
+      "baseline_score": 0.75,
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "personal_research_008",
+      "variant_decode_tokens_per_second": 144.3266956590466,
+      "variant_elapsed_ms": 3825.850486755371,
+      "variant_score": 0.75
+    },
+    {
+      "baseline_decode_tokens_per_second": 150.2364612285151,
+      "baseline_elapsed_ms": 7012.052297592163,
+      "baseline_score": 0.75,
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "personal_research_001",
+      "variant_decode_tokens_per_second": 144.12379305988267,
+      "variant_elapsed_ms": 7382.925748825073,
+      "variant_score": 0.75
+    },
+    {
+      "baseline_decode_tokens_per_second": 149.968839327621,
+      "baseline_elapsed_ms": 2897.7534770965576,
+      "baseline_score": 0.5,
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "personal_research_002",
+      "variant_decode_tokens_per_second": 142.9138023843953,
+      "variant_elapsed_ms": 3043.0448055267334,
+      "variant_score": 0.5
+    },
+    {
+      "baseline_decode_tokens_per_second": 148.6291242872299,
+      "baseline_elapsed_ms": 7190.263032913208,
+      "baseline_score": 0.75,
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "personal_research_003",
+      "variant_decode_tokens_per_second": 142.6707913794165,
+      "variant_elapsed_ms": 7468.942880630493,
+      "variant_score": 0.75
+    },
+    {
+      "baseline_decode_tokens_per_second": 149.17661783861274,
+      "baseline_elapsed_ms": 5540.038347244263,
+      "baseline_score": 0.5,
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "personal_research_004",
+      "variant_decode_tokens_per_second": 143.24878937303615,
+      "variant_elapsed_ms": 5784.234523773193,
+      "variant_score": 0.5
+    },
+    {
+      "baseline_decode_tokens_per_second": 149.91649885869705,
+      "baseline_elapsed_ms": 5705.189228057861,
+      "baseline_score": 0.75,
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "personal_research_005",
+      "variant_decode_tokens_per_second": 141.60899242983467,
+      "variant_elapsed_ms": 6061.216592788696,
+      "variant_score": 0.75
+    },
+    {
+      "baseline_decode_tokens_per_second": 150.3457147451359,
+      "baseline_elapsed_ms": 5590.331792831421,
+      "baseline_score": 1.0,
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "personal_research_006",
+      "variant_decode_tokens_per_second": 142.0250108322552,
+      "variant_elapsed_ms": 5885.514974594116,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 150.52583242801302,
+      "baseline_elapsed_ms": 5093.709468841553,
+      "baseline_score": 0.25,
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "personal_research_007",
+      "variant_decode_tokens_per_second": 141.6332974824049,
+      "variant_elapsed_ms": 5364.335775375366,
+      "variant_score": 0.25
+    },
+    {
+      "baseline_decode_tokens_per_second": 149.7946892124616,
+      "baseline_elapsed_ms": 5807.840585708618,
+      "baseline_score": 0.5,
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "personal_research_008",
+      "variant_decode_tokens_per_second": 142.66135208986097,
+      "variant_elapsed_ms": 6100.44527053833,
+      "variant_score": 0.5
+    }
+  ],
+  "variant": "data/personal_agent_bank/runs/20260620T161514Z/results.json",
+  "variant_name": "trim_probe_zero_all_v0_masked"
+}

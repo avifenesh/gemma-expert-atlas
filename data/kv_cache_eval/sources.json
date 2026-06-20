@@ -1,0 +1,59 @@
+{
+  "sources": [
+    {
+      "id": "kivi",
+      "insights": [
+        "KV cache memory grows with batch size and context length and can become the serving bottleneck.",
+        "KIVI argues key cache and value cache have different quantization structure: K per-channel, V per-token.",
+        "KV-cache quantization should be tested with quality, peak memory, and throughput, not memory alone."
+      ],
+      "title": "KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache",
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2402.02750"
+    },
+    {
+      "id": "hf_transformers_kv_cache",
+      "insights": [
+        "Hugging Face exposes a QuantizedCache to reduce KV memory.",
+        "The documented backends include HQQ with int2, int4, int8 and Quanto with int2, int4.",
+        "The cache implementation is an inference-time strategy, distinct from model-weight quantization."
+      ],
+      "title": "Transformers cache strategies: QuantizedCache",
+      "type": "official-docs",
+      "url": "https://huggingface.co/docs/transformers/en/kv_cache"
+    },
+    {
+      "id": "hf_blog_kv_cache_quant",
+      "insights": [
+        "KV-cache quantization is useful when longer context or larger batch would otherwise hit memory limits.",
+        "Evaluation should include long-generation and long-context behavior, not only short prompt quality.",
+        "Quantized KV implementations can keep a small residual cache in higher precision before quantizing."
+      ],
+      "title": "Unlocking Longer Generation with Key-Value Cache Quantization",
+      "type": "engineering-note",
+      "url": "https://huggingface.co/blog/kv-cache-quantization"
+    },
+    {
+      "id": "turboquant",
+      "insights": [
+        "TurboQuant targets online vector quantization, including KV-cache quantization.",
+        "The paper optimizes both mean-squared error and inner-product distortion.",
+        "The reported KV-cache setting highlights very low bit budgets, so evals must check attention-sensitive tasks."
+      ],
+      "title": "TurboQuant: Online Vector Quantization with Near-optimal Distortion Rate",
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2504.19874"
+    },
+    {
+      "id": "llama_cpp_cache_types",
+      "insights": [
+        "llama.cpp exposes separate --cache-type-k and --cache-type-v flags.",
+        "The local build documents f32, f16, bf16, q8_0, q4_0, q4_1, iq4_nl, q5_0, q5_1.",
+        "The /completion endpoint returns timings and token counts that can be used for eval summaries."
+      ],
+      "title": "llama.cpp CLI/server cache type flags",
+      "type": "official-docs",
+      "url": "https://github.com/ggml-org/llama.cpp/tree/master/tools/server"
+    }
+  ]
+}

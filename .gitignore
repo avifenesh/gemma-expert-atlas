@@ -1,0 +1,46 @@
+# Node/Vite output
+node_modules/
+dist/
+.vite/
+
+# Python local caches
+__pycache__/
+*.py[cod]
+
+# Local screenshots and browser test artifacts
+*.png
+.playwright-mcp/
+playwright-report/
+test-results/
+
+# Model and imatrix artifacts
+*.gguf
+data/*.gguf
+data/**/*.gguf
+data/**/*imatrix*/
+
+# Generated local corpora and raw eval banks.
+# The repo keeps scripts, curated public/data JSON, and summary reports instead.
+data/calibration_*.txt
+data/expert_usage_analysis.json
+data/theme_corpora/
+data/personal_agent_corpora/
+data/personal_agent_bank/
+data/personal_agent_eval/
+data/routing_timeline/
+
+# Raw run outputs and local surgery model manifests
+data/kv_cache_eval/runs/
+data/surgery_experiments/**/evals/
+data/surgery_experiments/*_eval/
+data/surgery_experiments/combined_static_eval/
+data/surgery_experiments/runtime_evict_eval/
+data/surgery_experiments/masked_models/
+data/surgery_experiments/replaced_models/
+data/surgery_experiments/trimmed_models/
+
+# Logs and local env
+data/**/*.log
+*.log
+.env
+.env.*

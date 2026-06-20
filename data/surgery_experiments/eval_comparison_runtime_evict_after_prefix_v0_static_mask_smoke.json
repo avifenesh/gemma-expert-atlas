@@ -1,0 +1,167 @@
+{
+  "baseline": "data/surgery_experiments/runtime_evict_eval/baseline/20260620T184743Z/results.json",
+  "created_at": "2026-06-20T18:50:02.143892+00:00",
+  "schema_version": 1,
+  "summary": [
+    {
+      "baseline_decode_tokens_per_second": 143.37510288878423,
+      "baseline_mean_score": 0.8782051282051282,
+      "baseline_min_score": 0.3333333333333333,
+      "config": "balanced",
+      "delta_decode_tokens_per_second": 0.6699719011701859,
+      "delta_mean_score": 0.0,
+      "delta_min_score": 0.0,
+      "tasks": 13,
+      "variant_decode_tokens_per_second": 144.0450747899544,
+      "variant_mean_score": 0.8782051282051282,
+      "variant_min_score": 0.3333333333333333
+    }
+  ],
+  "tasks": [
+    {
+      "baseline_decode_tokens_per_second": 147.2059587689735,
+      "baseline_elapsed_ms": 4369.609117507935,
+      "baseline_score": 1.0,
+      "config": "balanced",
+      "delta_score": 0.0,
+      "task_id": "agent_orchestration_001",
+      "variant_decode_tokens_per_second": 144.60490278888864,
+      "variant_elapsed_ms": 5462.628364562988,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 146.03604890590904,
+      "baseline_elapsed_ms": 4408.531665802002,
+      "baseline_score": 0.6666666666666666,
+      "config": "balanced",
+      "delta_score": 0.0,
+      "task_id": "code_review_001",
+      "variant_decode_tokens_per_second": 145.57646471624344,
+      "variant_elapsed_ms": 3925.5495071411133,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 117.35065968308692,
+      "baseline_elapsed_ms": 3803.7102222442627,
+      "baseline_score": 1.0,
+      "config": "balanced",
+      "delta_score": 0.0,
+      "task_id": "coding_agent_001",
+      "variant_decode_tokens_per_second": 146.44046791561962,
+      "variant_elapsed_ms": 3080.7039737701416,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 146.4475597603294,
+      "baseline_elapsed_ms": 5872.2288608551025,
+      "baseline_score": 1.0,
+      "config": "balanced",
+      "delta_score": 0.0,
+      "task_id": "eval_design_001",
+      "variant_decode_tokens_per_second": 144.05839380910055,
+      "variant_elapsed_ms": 5627.37250328064,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 147.06116273758255,
+      "baseline_elapsed_ms": 3935.8630180358887,
+      "baseline_score": 1.0,
+      "config": "balanced",
+      "delta_score": 0.0,
+      "task_id": "expert_surgery_001",
+      "variant_decode_tokens_per_second": 141.37462557578507,
+      "variant_elapsed_ms": 3958.8541984558105,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 146.235804374343,
+      "baseline_elapsed_ms": 2374.736547470093,
+      "baseline_score": 0.3333333333333333,
+      "config": "balanced",
+      "delta_score": 0.0,
+      "task_id": "instruction_following_001",
+      "variant_decode_tokens_per_second": 142.7672465579366,
+      "variant_elapsed_ms": 2477.5478839874268,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 147.2243140108472,
+      "baseline_elapsed_ms": 2391.6029930114746,
+      "baseline_score": 1.0,
+      "config": "balanced",
+      "delta_score": 0.0,
+      "task_id": "local_system_ops_001",
+      "variant_decode_tokens_per_second": 141.27998680069493,
+      "variant_elapsed_ms": 2658.367395401001,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 146.58338787001446,
+      "baseline_elapsed_ms": 4178.7824630737305,
+      "baseline_score": 1.0,
+      "config": "balanced",
+      "delta_score": 0.0,
+      "task_id": "model_ops_001",
+      "variant_decode_tokens_per_second": 143.08566585761693,
+      "variant_elapsed_ms": 5538.909196853638,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 146.04670778692864,
+      "baseline_elapsed_ms": 4693.063974380493,
+      "baseline_score": 0.75,
+      "config": "balanced",
+      "delta_score": 0.0,
+      "task_id": "personal_research_001",
+      "variant_decode_tokens_per_second": 145.30694419018386,
+      "variant_elapsed_ms": 5079.037189483643,
+      "variant_score": 0.75
+    },
+    {
+      "baseline_decode_tokens_per_second": 147.37806994084306,
+      "baseline_elapsed_ms": 3648.885726928711,
+      "baseline_score": 0.6666666666666666,
+      "config": "balanced",
+      "delta_score": 0.0,
+      "task_id": "personalization_memory_001",
+      "variant_decode_tokens_per_second": 145.7015547673976,
+      "variant_elapsed_ms": 3438.656806945801,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 131.85677323236777,
+      "baseline_elapsed_ms": 4745.745897293091,
+      "baseline_score": 1.0,
+      "config": "balanced",
+      "delta_score": 0.0,
+      "task_id": "routine_monitoring_001",
+      "variant_decode_tokens_per_second": 143.43381734408771,
+      "variant_elapsed_ms": 4023.6170291900635,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 146.28390444334937,
+      "baseline_elapsed_ms": 3718.7907695770264,
+      "baseline_score": 1.0,
+      "config": "balanced",
+      "delta_score": 0.0,
+      "task_id": "social_support_001",
+      "variant_decode_tokens_per_second": 142.7194328813651,
+      "variant_elapsed_ms": 3502.467632293701,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 148.1659860396202,
+      "baseline_elapsed_ms": 3769.5279121398926,
+      "baseline_score": 1.0,
+      "config": "balanced",
+      "delta_score": 0.0,
+      "task_id": "tool_recovery_001",
+      "variant_decode_tokens_per_second": 146.23646906448738,
+      "variant_elapsed_ms": 3369.3041801452637,
+      "variant_score": 1.0
+    }
+  ],
+  "variant": "data/surgery_experiments/runtime_evict_eval/static_mask/20260620T184845Z/results.json",
+  "variant_name": "runtime_evict_after_prefix_v0_static_mask"
+}

@@ -1,0 +1,500 @@
+{
+  "commands": {
+    "analyze": "npm run analyze:experts",
+    "full_eval": "npm run eval:personal-agent-bank:both",
+    "generate_bank": "npm run make-personal-agent-bank",
+    "routing": "npm run calibrate:personal-agent",
+    "smoke_eval": "python3 scripts/run_kv_cache_eval.py --tasks data/personal_agent_bank/tasks.jsonl --runs-dir data/personal_agent_bank/runs --limit 8 --reasoning-sweep on,off --cache-config balanced:q8_0:q5_1"
+  },
+  "created_at": "2026-06-20T15:31:32.137529+00:00",
+  "eval_gates": {
+    "hard_failures": [
+      "Any exact-marker or JSON-format task fails.",
+      "Tool-recovery, coding-agent, or personalization-memory family mean score drops below baseline by more than 0.02.",
+      "Any social-support task becomes robotic, unsafe, or ignores the user's requested tone.",
+      "A variant improves speed but loses scenario coverage needed by Avi's personal-agent workload."
+    ],
+    "required_suites": [
+      "personal_agent_bank",
+      "kv_cache_eval",
+      "routing_calibration"
+    ],
+    "success_criteria": [
+      "Memory or latency improves versus baseline.",
+      "Overall personal-agent mean score is at least baseline minus 0.01.",
+      "No task family drops below its baseline minimum score.",
+      "Routing analysis shows no protected task-hot expert was removed or overwritten."
+    ]
+  },
+  "principle": "Expert surgery is accepted only when a model variant improves memory or speed without task-family regressions on the personal-agent eval bank.",
+  "schema_version": 1,
+  "source_analysis": "data/expert_usage_analysis.json",
+  "variants": [
+    {
+      "candidate_experts": [],
+      "description": "Original model, current quantization, no expert edits.",
+      "kind": "control",
+      "name": "baseline",
+      "required_before": []
+    },
+    {
+      "candidate_experts": [
+        "L00.E042",
+        "L00.E043",
+        "L00.E082",
+        "L01.E017",
+        "L01.E019",
+        "L01.E063",
+        "L01.E075",
+        "L02.E022",
+        "L02.E089",
+        "L03.E041",
+        "L03.E101",
+        "L03.E115",
+        "L04.E060",
+        "L04.E065",
+        "L05.E012",
+        "L05.E103",
+        "L05.E122",
+        "L06.E048",
+        "L06.E120",
+        "L07.E002",
+        "L07.E034",
+        "L07.E100",
+        "L09.E006",
+        "L09.E083",
+        "L10.E044",
+        "L11.E001",
+        "L11.E091",
+        "L11.E093",
+        "L11.E097",
+        "L11.E116",
+        "L12.E010",
+        "L12.E013",
+        "L12.E041",
+        "L12.E100",
+        "L12.E110",
+        "L13.E021",
+        "L13.E028",
+        "L13.E037",
+        "L13.E040",
+        "L13.E055",
+        "L13.E086",
+        "L13.E105",
+        "L13.E110",
+        "L14.E015",
+        "L14.E016",
+        "L14.E035",
+        "L14.E076",
+        "L14.E112",
+        "L14.E116",
+        "L15.E053",
+        "L15.E054",
+        "L15.E094",
+        "L16.E085",
+        "L17.E067",
+        "L18.E017",
+        "L18.E044",
+        "L18.E110",
+        "L18.E114",
+        "L18.E118",
+        "L19.E076",
+        "L20.E124",
+        "L21.E012",
+        "L21.E051",
+        "L21.E063"
+      ],
+      "description": "Remove or disable the most conservative globally-dead/cold candidates, capped per layer.",
+      "kind": "trim",
+      "name": "trim_cold_v1",
+      "required_before": [
+        "Confirm candidates are not task-hot in personal-agent routing traces.",
+        "Implement a reversible surgery path and preserve original metadata.",
+        "Run baseline eval on the same task bank and cache/reasoning settings."
+      ]
+    },
+    {
+      "candidate_pairs": [
+        {
+          "routing_similarity": 0.5000000000000001,
+          "source": "L05.E099",
+          "target": "L05.E003",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.497460310358414,
+          "source": "L06.E054",
+          "target": "L06.E067",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.5307811336537378,
+          "source": "L08.E097",
+          "target": "L08.E112",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.5716313622811274,
+          "source": "L09.E039",
+          "target": "L09.E040",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.7559289460184545,
+          "source": "L10.E109",
+          "target": "L10.E001",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.447213595499958,
+          "source": "L11.E042",
+          "target": "L11.E063",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.47140452079103173,
+          "source": "L13.E017",
+          "target": "L13.E116",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.6127633533453719,
+          "source": "L16.E076",
+          "target": "L16.E087",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.41665005945381545,
+          "source": "L21.E126",
+          "target": "L21.E020",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.5768046062196326,
+          "source": "L04.E118",
+          "target": "L04.E121",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.7144345083117604,
+          "source": "L07.E011",
+          "target": "L07.E023",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.45017538678408603,
+          "source": "L08.E081",
+          "target": "L08.E013",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.5028452845140674,
+          "source": "L08.E016",
+          "target": "L08.E112",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.5081678060484395,
+          "source": "L19.E002",
+          "target": "L19.E095",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.8856457125893951,
+          "source": "L11.E045",
+          "target": "L11.E026",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.379250848849248,
+          "source": "L15.E118",
+          "target": "L15.E126",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.4659622011996895,
+          "source": "L01.E126",
+          "target": "L01.E068",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.5752237416355278,
+          "source": "L06.E112",
+          "target": "L06.E102",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.5715005715008572,
+          "source": "L12.E111",
+          "target": "L12.E098",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.6249324287797365,
+          "source": "L19.E083",
+          "target": "L19.E047",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.4632020146266785,
+          "source": "L21.E021",
+          "target": "L21.E019",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.43529211021739966,
+          "source": "L19.E065",
+          "target": "L19.E079",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.5886186643123186,
+          "source": "L05.E001",
+          "target": "L05.E069",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.4743585672398446,
+          "source": "L12.E124",
+          "target": "L12.E091",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.9125860617576326,
+          "source": "L06.E092",
+          "target": "L06.E101",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.8295563250133392,
+          "source": "L26.E069",
+          "target": "L26.E033",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.5843857005197295,
+          "source": "L14.E043",
+          "target": "L14.E096",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.6087595874350709,
+          "source": "L17.E073",
+          "target": "L17.E058",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.6388203983378612,
+          "source": "L05.E074",
+          "target": "L05.E069",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.6329643272929386,
+          "source": "L08.E083",
+          "target": "L08.E112",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.7128216440738759,
+          "source": "L06.E055",
+          "target": "L06.E117",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.669538871331641,
+          "source": "L16.E069",
+          "target": "L16.E008",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.7193887791962168,
+          "source": "L10.E034",
+          "target": "L10.E001",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.5464331232440063,
+          "source": "L05.E035",
+          "target": "L05.E011",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.5636018619766345,
+          "source": "L06.E076",
+          "target": "L06.E102",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.6040404496926219,
+          "source": "L10.E061",
+          "target": "L10.E098",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.5355798982783866,
+          "source": "L13.E112",
+          "target": "L13.E081",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.5506803430896673,
+          "source": "L15.E036",
+          "target": "L15.E025",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.6432675209026768,
+          "source": "L07.E109",
+          "target": "L07.E097",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.63298308624874,
+          "source": "L11.E121",
+          "target": "L11.E002",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.6460582824697986,
+          "source": "L03.E079",
+          "target": "L03.E050",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.661039585518269,
+          "source": "L09.E116",
+          "target": "L09.E040",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.6043062753519708,
+          "source": "L16.E019",
+          "target": "L16.E062",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.5763076921325561,
+          "source": "L11.E067",
+          "target": "L11.E096",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.6257526384458433,
+          "source": "L06.E063",
+          "target": "L06.E012",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.8415246128230892,
+          "source": "L05.E054",
+          "target": "L05.E125",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.5521680348059532,
+          "source": "L07.E003",
+          "target": "L07.E078",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.577080219713352,
+          "source": "L23.E015",
+          "target": "L23.E094",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.5280022582896025,
+          "source": "L15.E050",
+          "target": "L15.E044",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.6159949269290446,
+          "source": "L06.E078",
+          "target": "L06.E100",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.6291982286679645,
+          "source": "L08.E100",
+          "target": "L08.E009",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.7053657587108946,
+          "source": "L03.E037",
+          "target": "L03.E111",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.5616007450864435,
+          "source": "L12.E040",
+          "target": "L12.E088",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.7201579347479219,
+          "source": "L11.E075",
+          "target": "L11.E125",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.7883561227922861,
+          "source": "L04.E010",
+          "target": "L04.E104",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.7333370001486369,
+          "source": "L17.E008",
+          "target": "L17.E115",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.724568837309472,
+          "source": "L00.E019",
+          "target": "L00.E023",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.573262548865461,
+          "source": "L02.E021",
+          "target": "L02.E034",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        },
+        {
+          "routing_similarity": 0.8906447127117064,
+          "source": "L06.E072",
+          "target": "L06.E101",
+          "warning": "routing-profile similarity only; require weight-space check before merging"
+        }
+      ],
+      "description": "Merge low-use candidates into same-layer experts after routing and weight-similarity checks.",
+      "kind": "merge",
+      "name": "merge_low_use_v1",
+      "required_before": [
+        "Add weight-space similarity for gate_up_proj and down_proj tensors.",
+        "Do not merge if source and target are task-hot for different families.",
+        "Compare against trim_cold_v1 rather than assuming merge is safer."
+      ]
+    },
+    {
+      "description": "Reserved specialist-capacity experiment. Use task-hot winners from one variant to guide new or copied experts, then adapt the router and validate scenario-level wins.",
+      "kind": "add",
+      "name": "add_specialist_v1",
+      "protected_task_hot_experts": [],
+      "required_before": [
+        "Identify a task family where a variant wins and another variant regresses.",
+        "Inspect which experts are uniquely active in the winning scenario.",
+        "Train, route-tune, or otherwise adapt router behavior; tensor copying alone is not enough."
+      ]
+    }
+  ],
+  "warnings": [
+    "Do not delete globally cold experts until a baseline eval and a trimmed-model eval are both available.",
+    "Do not merge low-use experts from routing alone; add a weight-space similarity check first.",
+    "Do not add experts by copying tensors alone; adding capacity requires router adaptation and a task-specific eval win.",
+    "Protect any expert that is task-hot in a narrow personal-agent family even if it is cold globally."
+  ]
+}

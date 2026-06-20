@@ -1,0 +1,936 @@
+{
+  "baseline": "data/personal_agent_bank/runs/20260620T170017Z/results.json",
+  "category_deltas": [
+    {
+      "baseline_mean": 0.9166666666666666,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_off",
+      "delta_mean": 0.0,
+      "negative_tasks": 0,
+      "positive_tasks": 0,
+      "tasks": 8,
+      "variant_mean": 0.9166666666666666
+    },
+    {
+      "baseline_mean": 0.625,
+      "category": "code_review",
+      "config": "balanced_reasoning_off",
+      "delta_mean": 0.041666666666666664,
+      "negative_tasks": 0,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.6666666666666666
+    },
+    {
+      "baseline_mean": 0.8333333333333333,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_off",
+      "delta_mean": 0.125,
+      "negative_tasks": 0,
+      "positive_tasks": 3,
+      "tasks": 8,
+      "variant_mean": 0.9583333333333334
+    },
+    {
+      "baseline_mean": 0.875,
+      "category": "eval_design",
+      "config": "balanced_reasoning_off",
+      "delta_mean": -0.16666666666666669,
+      "negative_tasks": 5,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.7083333333333333
+    },
+    {
+      "baseline_mean": 0.7916666666666666,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_off",
+      "delta_mean": -0.04166666666666668,
+      "negative_tasks": 2,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.75
+    },
+    {
+      "baseline_mean": 0.4583333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_off",
+      "delta_mean": -0.08333333333333333,
+      "negative_tasks": 3,
+      "positive_tasks": 2,
+      "tasks": 8,
+      "variant_mean": 0.375
+    },
+    {
+      "baseline_mean": 0.9583333333333334,
+      "category": "local_system_ops",
+      "config": "balanced_reasoning_off",
+      "delta_mean": 0.0,
+      "negative_tasks": 0,
+      "positive_tasks": 0,
+      "tasks": 8,
+      "variant_mean": 0.9583333333333334
+    },
+    {
+      "baseline_mean": 0.9166666666666666,
+      "category": "model_ops",
+      "config": "balanced_reasoning_off",
+      "delta_mean": -0.08333333333333334,
+      "negative_tasks": 2,
+      "positive_tasks": 0,
+      "tasks": 8,
+      "variant_mean": 0.8333333333333334
+    },
+    {
+      "baseline_mean": 0.625,
+      "category": "personal_research",
+      "config": "balanced_reasoning_off",
+      "delta_mean": -0.0625,
+      "negative_tasks": 2,
+      "positive_tasks": 0,
+      "tasks": 8,
+      "variant_mean": 0.5625
+    },
+    {
+      "baseline_mean": 0.7083333333333334,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_off",
+      "delta_mean": -6.938893903907228e-18,
+      "negative_tasks": 1,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.7083333333333333
+    },
+    {
+      "baseline_mean": 0.6666666666666666,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_off",
+      "delta_mean": 0.08333333333333333,
+      "negative_tasks": 0,
+      "positive_tasks": 2,
+      "tasks": 8,
+      "variant_mean": 0.75
+    },
+    {
+      "baseline_mean": 0.5416666666666666,
+      "category": "social_support",
+      "config": "balanced_reasoning_off",
+      "delta_mean": -0.04166666666666667,
+      "negative_tasks": 2,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.5
+    },
+    {
+      "baseline_mean": 0.9583333333333334,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_off",
+      "delta_mean": 0.04166666666666667,
+      "negative_tasks": 0,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 1.0
+    },
+    {
+      "baseline_mean": 0.9583333333333334,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_on",
+      "delta_mean": -0.04166666666666667,
+      "negative_tasks": 1,
+      "positive_tasks": 0,
+      "tasks": 8,
+      "variant_mean": 0.9166666666666666
+    },
+    {
+      "baseline_mean": 0.625,
+      "category": "code_review",
+      "config": "balanced_reasoning_on",
+      "delta_mean": -0.041666666666666664,
+      "negative_tasks": 2,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.5833333333333333
+    },
+    {
+      "baseline_mean": 0.875,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_on",
+      "delta_mean": -0.04166666666666667,
+      "negative_tasks": 2,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.8333333333333333
+    },
+    {
+      "baseline_mean": 0.875,
+      "category": "eval_design",
+      "config": "balanced_reasoning_on",
+      "delta_mean": 0.0,
+      "negative_tasks": 2,
+      "positive_tasks": 2,
+      "tasks": 8,
+      "variant_mean": 0.875
+    },
+    {
+      "baseline_mean": 0.7083333333333334,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_on",
+      "delta_mean": 0.041666666666666664,
+      "negative_tasks": 0,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.75
+    },
+    {
+      "baseline_mean": 0.3333333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_on",
+      "delta_mean": 0.125,
+      "negative_tasks": 1,
+      "positive_tasks": 4,
+      "tasks": 8,
+      "variant_mean": 0.4583333333333333
+    },
+    {
+      "baseline_mean": 0.9583333333333334,
+      "category": "local_system_ops",
+      "config": "balanced_reasoning_on",
+      "delta_mean": 0.0,
+      "negative_tasks": 0,
+      "positive_tasks": 0,
+      "tasks": 8,
+      "variant_mean": 0.9583333333333334
+    },
+    {
+      "baseline_mean": 0.875,
+      "category": "model_ops",
+      "config": "balanced_reasoning_on",
+      "delta_mean": -0.04166666666666668,
+      "negative_tasks": 2,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.8333333333333333
+    },
+    {
+      "baseline_mean": 0.625,
+      "category": "personal_research",
+      "config": "balanced_reasoning_on",
+      "delta_mean": 0.0,
+      "negative_tasks": 3,
+      "positive_tasks": 2,
+      "tasks": 8,
+      "variant_mean": 0.625
+    },
+    {
+      "baseline_mean": 0.625,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_on",
+      "delta_mean": -0.08333333333333334,
+      "negative_tasks": 3,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.5416666666666666
+    },
+    {
+      "baseline_mean": 0.7083333333333333,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_on",
+      "delta_mean": 0.04166666666666667,
+      "negative_tasks": 0,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.75
+    },
+    {
+      "baseline_mean": 0.5416666666666666,
+      "category": "social_support",
+      "config": "balanced_reasoning_on",
+      "delta_mean": 0.08333333333333333,
+      "negative_tasks": 0,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.625
+    },
+    {
+      "baseline_mean": 0.9583333333333334,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_on",
+      "delta_mean": 0.0,
+      "negative_tasks": 0,
+      "positive_tasks": 0,
+      "tasks": 8,
+      "variant_mean": 0.9583333333333334
+    }
+  ],
+  "comparison_summary": [
+    {
+      "baseline_decode_tokens_per_second": 142.5539018668833,
+      "baseline_mean_score": 0.7596153846153846,
+      "baseline_min_score": 0.0,
+      "config": "balanced_reasoning_off",
+      "delta_decode_tokens_per_second": 0.8073765255157923,
+      "delta_mean_score": -0.014423076923076872,
+      "delta_min_score": 0.0,
+      "tasks": 104,
+      "variant_decode_tokens_per_second": 143.3612783923991,
+      "variant_mean_score": 0.7451923076923077,
+      "variant_min_score": 0.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.51953853192393,
+      "baseline_mean_score": 0.7435897435897435,
+      "baseline_min_score": 0.0,
+      "config": "balanced_reasoning_on",
+      "delta_decode_tokens_per_second": 0.5528817364026395,
+      "delta_mean_score": 0.0032051282051283048,
+      "delta_min_score": 0.0,
+      "tasks": 104,
+      "variant_decode_tokens_per_second": 145.07242026832657,
+      "variant_mean_score": 0.7467948717948718,
+      "variant_min_score": 0.0
+    }
+  ],
+  "negative_tasks": [
+    {
+      "baseline_decode_tps": 140.03777962456422,
+      "baseline_score": 0.6666666666666666,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.6666666666666666,
+      "task_id": "instruction_following_008",
+      "variant_decode_tps": 143.58282477542883,
+      "variant_score": 0.0
+    },
+    {
+      "baseline_decode_tps": 142.88538977630276,
+      "baseline_score": 1.0,
+      "category": "eval_design",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "eval_design_001",
+      "variant_decode_tps": 144.66739893374768,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 142.78128422926324,
+      "baseline_score": 1.0,
+      "category": "eval_design",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "eval_design_002",
+      "variant_decode_tps": 144.44234730525915,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 144.23925365898617,
+      "baseline_score": 1.0,
+      "category": "eval_design",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "eval_design_003",
+      "variant_decode_tps": 144.68246179895428,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 140.4924460939086,
+      "baseline_score": 1.0,
+      "category": "eval_design",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "eval_design_006",
+      "variant_decode_tps": 146.17769314698418,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 142.30437293508987,
+      "baseline_score": 1.0,
+      "category": "eval_design",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "eval_design_007",
+      "variant_decode_tps": 146.24762429465534,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 143.2384546354035,
+      "baseline_score": 1.0,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "expert_surgery_002",
+      "variant_decode_tps": 141.3491906705038,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 140.92733502382976,
+      "baseline_score": 1.0,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "expert_surgery_004",
+      "variant_decode_tps": 143.57435799820033,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 143.32337455586583,
+      "baseline_score": 1.0,
+      "category": "model_ops",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "model_ops_004",
+      "variant_decode_tps": 137.3805151046261,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 142.65050858401378,
+      "baseline_score": 1.0,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "personalization_memory_006",
+      "variant_decode_tps": 141.32057575563158,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 144.6513662979053,
+      "baseline_score": 1.0,
+      "category": "social_support",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "social_support_008",
+      "variant_decode_tps": 142.34286847592136,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 143.96621365013303,
+      "baseline_score": 0.6666666666666666,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.3333333333333333,
+      "task_id": "instruction_following_002",
+      "variant_decode_tps": 145.41801068161388,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tps": 141.63668060000322,
+      "baseline_score": 0.6666666666666666,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.3333333333333333,
+      "task_id": "instruction_following_005",
+      "variant_decode_tps": 142.57543967258144,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tps": 142.68247324837222,
+      "baseline_score": 0.6666666666666666,
+      "category": "model_ops",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.3333333333333333,
+      "task_id": "model_ops_006",
+      "variant_decode_tps": 138.4172636091767,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tps": 142.7202748686775,
+      "baseline_score": 0.6666666666666666,
+      "category": "social_support",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.3333333333333333,
+      "task_id": "social_support_002",
+      "variant_decode_tps": 144.4807832079414,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tps": 145.07261321620553,
+      "baseline_score": 0.75,
+      "category": "personal_research",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.25,
+      "task_id": "personal_research_005",
+      "variant_decode_tps": 144.9902252423149,
+      "variant_score": 0.5
+    },
+    {
+      "baseline_decode_tps": 140.91118294938087,
+      "baseline_score": 0.75,
+      "category": "personal_research",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.25,
+      "task_id": "personal_research_008",
+      "variant_decode_tps": 147.00258077974806,
+      "variant_score": 0.5
+    },
+    {
+      "baseline_decode_tps": 145.3943257683454,
+      "baseline_score": 1.0,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "agent_orchestration_008",
+      "variant_decode_tps": 145.51403446059214,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 146.25754846972848,
+      "baseline_score": 1.0,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "coding_agent_002",
+      "variant_decode_tps": 141.97959266749868,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 144.80431644802573,
+      "baseline_score": 1.0,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "coding_agent_003",
+      "variant_decode_tps": 142.00181245949722,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 144.35911811804206,
+      "baseline_score": 1.0,
+      "category": "eval_design",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "eval_design_005",
+      "variant_decode_tps": 148.24508323207078,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 143.1602375613676,
+      "baseline_score": 1.0,
+      "category": "eval_design",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "eval_design_008",
+      "variant_decode_tps": 145.41948834401214,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 144.04590421542602,
+      "baseline_score": 1.0,
+      "category": "model_ops",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "model_ops_002",
+      "variant_decode_tps": 145.63914026534584,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 144.5674129705046,
+      "baseline_score": 1.0,
+      "category": "model_ops",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "model_ops_003",
+      "variant_decode_tps": 145.54832926497517,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 143.85938772417018,
+      "baseline_score": 1.0,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "personalization_memory_001",
+      "variant_decode_tps": 146.49618257036582,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 142.9317443706322,
+      "baseline_score": 1.0,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "personalization_memory_003",
+      "variant_decode_tps": 146.9701220635599,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 145.87393690525198,
+      "baseline_score": 0.6666666666666666,
+      "category": "code_review",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.3333333333333333,
+      "task_id": "code_review_004",
+      "variant_decode_tps": 144.2662540755217,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tps": 145.62462335244663,
+      "baseline_score": 0.6666666666666666,
+      "category": "code_review",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.3333333333333333,
+      "task_id": "code_review_006",
+      "variant_decode_tps": 146.1356611782332,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tps": 144.8732275613787,
+      "baseline_score": 0.3333333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.3333333333333333,
+      "task_id": "instruction_following_006",
+      "variant_decode_tps": 145.38795671300394,
+      "variant_score": 0.0
+    },
+    {
+      "baseline_decode_tps": 144.58156743895995,
+      "baseline_score": 0.6666666666666666,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.3333333333333333,
+      "task_id": "personalization_memory_006",
+      "variant_decode_tps": 144.64852840238413,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tps": 148.53016643124081,
+      "baseline_score": 0.75,
+      "category": "personal_research",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.25,
+      "task_id": "personal_research_003",
+      "variant_decode_tps": 145.7586660116679,
+      "variant_score": 0.5
+    },
+    {
+      "baseline_decode_tps": 147.74909272219986,
+      "baseline_score": 0.75,
+      "category": "personal_research",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.25,
+      "task_id": "personal_research_005",
+      "variant_decode_tps": 144.88299771697154,
+      "variant_score": 0.5
+    },
+    {
+      "baseline_decode_tps": 146.90981681642106,
+      "baseline_score": 1.0,
+      "category": "personal_research",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.25,
+      "task_id": "personal_research_006",
+      "variant_decode_tps": 142.53384562009245,
+      "variant_score": 0.75
+    }
+  ],
+  "positive_tasks": [
+    {
+      "baseline_decode_tps": 142.800176748898,
+      "baseline_score": 0.6666666666666666,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "coding_agent_003",
+      "variant_decode_tps": 143.19305207729366,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tps": 141.4258469455711,
+      "baseline_score": 0.6666666666666666,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "coding_agent_006",
+      "variant_decode_tps": 142.00856162143882,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tps": 146.219742843974,
+      "baseline_score": 0.6666666666666666,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "coding_agent_007",
+      "variant_decode_tps": 141.9815632654567,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tps": 144.97686916193743,
+      "baseline_score": 0.6666666666666666,
+      "category": "eval_design",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "eval_design_004",
+      "variant_decode_tps": 144.96969411394542,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tps": 139.04844960978684,
+      "baseline_score": 0.6666666666666666,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "tool_recovery_002",
+      "variant_decode_tps": 144.72589244892657,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tps": 145.09844048531653,
+      "baseline_score": 0.3333333333333333,
+      "category": "code_review",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.3333333333333333,
+      "task_id": "code_review_005",
+      "variant_decode_tps": 141.61209890477625,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 143.51313069346656,
+      "baseline_score": 0.3333333333333333,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.3333333333333333,
+      "task_id": "expert_surgery_007",
+      "variant_decode_tps": 143.58756495597248,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 142.87842960900724,
+      "baseline_score": 0.3333333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.3333333333333333,
+      "task_id": "instruction_following_004",
+      "variant_decode_tps": 143.24988935686295,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 141.8505578859981,
+      "baseline_score": 0.3333333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.3333333333333333,
+      "task_id": "instruction_following_007",
+      "variant_decode_tps": 145.5735142354549,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 144.56856897336098,
+      "baseline_score": 0.3333333333333333,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.3333333333333333,
+      "task_id": "personalization_memory_004",
+      "variant_decode_tps": 144.78949093848564,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 142.02163057062938,
+      "baseline_score": 0.3333333333333333,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.3333333333333333,
+      "task_id": "routine_monitoring_004",
+      "variant_decode_tps": 145.57813416424852,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 141.0361378641121,
+      "baseline_score": 0.3333333333333333,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.3333333333333333,
+      "task_id": "routine_monitoring_006",
+      "variant_decode_tps": 144.96457904956642,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 142.25363787436146,
+      "baseline_score": 0.3333333333333333,
+      "category": "social_support",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.3333333333333333,
+      "task_id": "social_support_005",
+      "variant_decode_tps": 143.0903322177229,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 143.70759081701993,
+      "baseline_score": 0.0,
+      "category": "social_support",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.6666666666666666,
+      "task_id": "social_support_006",
+      "variant_decode_tps": 146.15308517300454,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 147.00159404853548,
+      "baseline_score": 0.25,
+      "category": "personal_research",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.5,
+      "task_id": "personal_research_007",
+      "variant_decode_tps": 141.19149893457444,
+      "variant_score": 0.75
+    },
+    {
+      "baseline_decode_tps": 146.33875242862285,
+      "baseline_score": 0.6666666666666666,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.33333333333333337,
+      "task_id": "coding_agent_006",
+      "variant_decode_tps": 144.03660581082912,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tps": 145.13559760928788,
+      "baseline_score": 0.6666666666666666,
+      "category": "eval_design",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.33333333333333337,
+      "task_id": "eval_design_004",
+      "variant_decode_tps": 148.16473951220812,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tps": 143.11979298354044,
+      "baseline_score": 0.6666666666666666,
+      "category": "eval_design",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.33333333333333337,
+      "task_id": "eval_design_007",
+      "variant_decode_tps": 147.3422829764838,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tps": 141.80893925556413,
+      "baseline_score": 0.6666666666666666,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.33333333333333337,
+      "task_id": "instruction_following_005",
+      "variant_decode_tps": 144.80980348835988,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tps": 144.53532690936356,
+      "baseline_score": 0.6666666666666666,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.33333333333333337,
+      "task_id": "routine_monitoring_008",
+      "variant_decode_tps": 145.27728626209904,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tps": 143.90277706992268,
+      "baseline_score": 0.3333333333333333,
+      "category": "code_review",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.3333333333333333,
+      "task_id": "code_review_003",
+      "variant_decode_tps": 145.0597484986316,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 145.14431944997253,
+      "baseline_score": 0.3333333333333333,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.3333333333333333,
+      "task_id": "expert_surgery_008",
+      "variant_decode_tps": 146.6168755224724,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 142.91850091257592,
+      "baseline_score": 0.0,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.3333333333333333,
+      "task_id": "instruction_following_003",
+      "variant_decode_tps": 145.68363665206056,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tps": 145.12527301208664,
+      "baseline_score": 0.3333333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.3333333333333333,
+      "task_id": "instruction_following_004",
+      "variant_decode_tps": 145.59913692589026,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 143.61167094501704,
+      "baseline_score": 0.3333333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.3333333333333333,
+      "task_id": "instruction_following_007",
+      "variant_decode_tps": 145.4847264887142,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 143.4394724485683,
+      "baseline_score": 0.3333333333333333,
+      "category": "model_ops",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.3333333333333333,
+      "task_id": "model_ops_006",
+      "variant_decode_tps": 144.88560924873724,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 144.4531627035066,
+      "baseline_score": 0.3333333333333333,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.3333333333333333,
+      "task_id": "personalization_memory_008",
+      "variant_decode_tps": 144.424179948722,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tps": 147.30446040169414,
+      "baseline_score": 0.5,
+      "category": "personal_research",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.25,
+      "task_id": "personal_research_008",
+      "variant_decode_tps": 142.1026183362419,
+      "variant_score": 0.75
+    }
+  ],
+  "summary": [
+    {
+      "base_name": "balanced",
+      "cache_type_k": "q8_0",
+      "cache_type_v": "q5_1",
+      "mean_decode_tokens_per_second": 145.07242026832657,
+      "mean_prompt_tokens_per_second": 1890.9043273207967,
+      "mean_score": 0.7467948717948718,
+      "min_score": 0.0,
+      "name": "balanced_reasoning_on",
+      "ok_tasks": 104,
+      "reasoning": "on",
+      "tasks": 104
+    },
+    {
+      "base_name": "balanced",
+      "cache_type_k": "q8_0",
+      "cache_type_v": "q5_1",
+      "mean_decode_tokens_per_second": 143.3612783923991,
+      "mean_prompt_tokens_per_second": 1890.3331731101975,
+      "mean_score": 0.7451923076923077,
+      "min_score": 0.0,
+      "name": "balanced_reasoning_off",
+      "ok_tasks": 104,
+      "reasoning": "off",
+      "tasks": 104
+    }
+  ],
+  "variant": "data/surgery_experiments/combined_static_eval/full_retry2/20260620T192556Z/results.json"
+}

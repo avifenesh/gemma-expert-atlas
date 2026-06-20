@@ -1,0 +1,3027 @@
+{
+  "baseline": "data/personal_agent_bank/runs/20260620T170017Z/results.json",
+  "category_deltas": [
+    {
+      "baseline_mean": 0.9166666666666666,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_off",
+      "delta_mean": -0.04166666666666667,
+      "negative_tasks": 1,
+      "positive_tasks": 0,
+      "tasks": 8,
+      "variant_mean": 0.875
+    },
+    {
+      "baseline_mean": 0.625,
+      "category": "code_review",
+      "config": "balanced_reasoning_off",
+      "delta_mean": 0.08333333333333334,
+      "negative_tasks": 0,
+      "positive_tasks": 2,
+      "tasks": 8,
+      "variant_mean": 0.7083333333333333
+    },
+    {
+      "baseline_mean": 0.8333333333333333,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_off",
+      "delta_mean": 0.04166666666666667,
+      "negative_tasks": 1,
+      "positive_tasks": 2,
+      "tasks": 8,
+      "variant_mean": 0.875
+    },
+    {
+      "baseline_mean": 0.875,
+      "category": "eval_design",
+      "config": "balanced_reasoning_off",
+      "delta_mean": 0.0,
+      "negative_tasks": 2,
+      "positive_tasks": 2,
+      "tasks": 8,
+      "variant_mean": 0.875
+    },
+    {
+      "baseline_mean": 0.7916666666666666,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_off",
+      "delta_mean": 0.0,
+      "negative_tasks": 1,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.7916666666666666
+    },
+    {
+      "baseline_mean": 0.4583333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_off",
+      "delta_mean": 6.938893903907228e-18,
+      "negative_tasks": 2,
+      "positive_tasks": 3,
+      "tasks": 8,
+      "variant_mean": 0.4583333333333333
+    },
+    {
+      "baseline_mean": 0.9583333333333334,
+      "category": "local_system_ops",
+      "config": "balanced_reasoning_off",
+      "delta_mean": -0.04166666666666667,
+      "negative_tasks": 1,
+      "positive_tasks": 0,
+      "tasks": 8,
+      "variant_mean": 0.9166666666666666
+    },
+    {
+      "baseline_mean": 0.9166666666666666,
+      "category": "model_ops",
+      "config": "balanced_reasoning_off",
+      "delta_mean": -0.041666666666666664,
+      "negative_tasks": 2,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.875
+    },
+    {
+      "baseline_mean": 0.625,
+      "category": "personal_research",
+      "config": "balanced_reasoning_off",
+      "delta_mean": 0.03125,
+      "negative_tasks": 1,
+      "positive_tasks": 2,
+      "tasks": 8,
+      "variant_mean": 0.65625
+    },
+    {
+      "baseline_mean": 0.7083333333333334,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_off",
+      "delta_mean": -0.08333333333333334,
+      "negative_tasks": 2,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.625
+    },
+    {
+      "baseline_mean": 0.6666666666666666,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_off",
+      "delta_mean": 0.08333333333333334,
+      "negative_tasks": 1,
+      "positive_tasks": 3,
+      "tasks": 8,
+      "variant_mean": 0.75
+    },
+    {
+      "baseline_mean": 0.5416666666666666,
+      "category": "social_support",
+      "config": "balanced_reasoning_off",
+      "delta_mean": 0.125,
+      "negative_tasks": 0,
+      "positive_tasks": 2,
+      "tasks": 8,
+      "variant_mean": 0.6666666666666666
+    },
+    {
+      "baseline_mean": 0.9583333333333334,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_off",
+      "delta_mean": 0.0,
+      "negative_tasks": 1,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.9583333333333334
+    },
+    {
+      "baseline_mean": 0.9583333333333334,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_on",
+      "delta_mean": 0.0,
+      "negative_tasks": 1,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.9583333333333334
+    },
+    {
+      "baseline_mean": 0.625,
+      "category": "code_review",
+      "config": "balanced_reasoning_on",
+      "delta_mean": 0.0,
+      "negative_tasks": 1,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.625
+    },
+    {
+      "baseline_mean": 0.875,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_on",
+      "delta_mean": -0.04166666666666667,
+      "negative_tasks": 2,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.8333333333333333
+    },
+    {
+      "baseline_mean": 0.875,
+      "category": "eval_design",
+      "config": "balanced_reasoning_on",
+      "delta_mean": 0.04166666666666667,
+      "negative_tasks": 1,
+      "positive_tasks": 2,
+      "tasks": 8,
+      "variant_mean": 0.9166666666666666
+    },
+    {
+      "baseline_mean": 0.7083333333333334,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_on",
+      "delta_mean": 0.041666666666666664,
+      "negative_tasks": 0,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.75
+    },
+    {
+      "baseline_mean": 0.3333333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_on",
+      "delta_mean": 0.041666666666666664,
+      "negative_tasks": 1,
+      "positive_tasks": 2,
+      "tasks": 8,
+      "variant_mean": 0.375
+    },
+    {
+      "baseline_mean": 0.9583333333333334,
+      "category": "local_system_ops",
+      "config": "balanced_reasoning_on",
+      "delta_mean": -0.04166666666666667,
+      "negative_tasks": 1,
+      "positive_tasks": 0,
+      "tasks": 8,
+      "variant_mean": 0.9166666666666666
+    },
+    {
+      "baseline_mean": 0.875,
+      "category": "model_ops",
+      "config": "balanced_reasoning_on",
+      "delta_mean": 0.0,
+      "negative_tasks": 1,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.875
+    },
+    {
+      "baseline_mean": 0.625,
+      "category": "personal_research",
+      "config": "balanced_reasoning_on",
+      "delta_mean": -0.03125,
+      "negative_tasks": 1,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.59375
+    },
+    {
+      "baseline_mean": 0.625,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_on",
+      "delta_mean": -0.08333333333333334,
+      "negative_tasks": 3,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 0.5416666666666666
+    },
+    {
+      "baseline_mean": 0.7083333333333333,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_on",
+      "delta_mean": 0.08333333333333334,
+      "negative_tasks": 0,
+      "positive_tasks": 2,
+      "tasks": 8,
+      "variant_mean": 0.7916666666666666
+    },
+    {
+      "baseline_mean": 0.5416666666666666,
+      "category": "social_support",
+      "config": "balanced_reasoning_on",
+      "delta_mean": 0.041666666666666664,
+      "negative_tasks": 2,
+      "positive_tasks": 2,
+      "tasks": 8,
+      "variant_mean": 0.5833333333333333
+    },
+    {
+      "baseline_mean": 0.9583333333333334,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_on",
+      "delta_mean": 0.04166666666666667,
+      "negative_tasks": 0,
+      "positive_tasks": 1,
+      "tasks": 8,
+      "variant_mean": 1.0
+    }
+  ],
+  "created_at": "2026-06-20T20:11:00.877354+00:00",
+  "negative_tasks": [
+    {
+      "baseline_decode_tokens_per_second": 141.82964321171698,
+      "baseline_score": 1.0,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.6666666666666667,
+      "task_id": "personalization_memory_007",
+      "variant_decode_tokens_per_second": 142.8678723325111,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 140.03777962456422,
+      "baseline_score": 0.6666666666666666,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.6666666666666666,
+      "task_id": "instruction_following_008",
+      "variant_decode_tokens_per_second": 144.908643891555,
+      "variant_score": 0.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.35280211006844,
+      "baseline_score": 1.0,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "agent_orchestration_006",
+      "variant_decode_tokens_per_second": 146.2203620036096,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.07419750545228,
+      "baseline_score": 1.0,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "coding_agent_002",
+      "variant_decode_tokens_per_second": 144.41011463577593,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 140.4924460939086,
+      "baseline_score": 1.0,
+      "category": "eval_design",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "eval_design_006",
+      "variant_decode_tokens_per_second": 146.6480477315462,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.30437293508987,
+      "baseline_score": 1.0,
+      "category": "eval_design",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "eval_design_007",
+      "variant_decode_tokens_per_second": 147.2832616632107,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 140.92733502382976,
+      "baseline_score": 1.0,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "expert_surgery_004",
+      "variant_decode_tokens_per_second": 145.30733132345918,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.94578379178708,
+      "baseline_score": 1.0,
+      "category": "local_system_ops",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "local_system_ops_007",
+      "variant_decode_tokens_per_second": 147.69414515348595,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.32337455586583,
+      "baseline_score": 1.0,
+      "category": "model_ops",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "model_ops_004",
+      "variant_decode_tokens_per_second": 142.59750026582034,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.65050858401378,
+      "baseline_score": 1.0,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "personalization_memory_006",
+      "variant_decode_tokens_per_second": 144.10678595401518,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.12009888139343,
+      "baseline_score": 1.0,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "routine_monitoring_001",
+      "variant_decode_tokens_per_second": 144.78230813228436,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.14216687922206,
+      "baseline_score": 1.0,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "tool_recovery_006",
+      "variant_decode_tokens_per_second": 143.40043229983982,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.96621365013303,
+      "baseline_score": 0.6666666666666666,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.3333333333333333,
+      "task_id": "instruction_following_002",
+      "variant_decode_tokens_per_second": 144.07826440060555,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.68247324837222,
+      "baseline_score": 0.6666666666666666,
+      "category": "model_ops",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.3333333333333333,
+      "task_id": "model_ops_006",
+      "variant_decode_tokens_per_second": 142.86481495095933,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 140.91118294938087,
+      "baseline_score": 0.75,
+      "category": "personal_research",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.25,
+      "task_id": "personal_research_008",
+      "variant_decode_tokens_per_second": 144.41413392581302,
+      "variant_score": 0.5
+    },
+    {
+      "baseline_decode_tokens_per_second": 146.90981681642106,
+      "baseline_score": 1.0,
+      "category": "personal_research",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.5,
+      "task_id": "personal_research_006",
+      "variant_decode_tokens_per_second": 140.43508719155167,
+      "variant_score": 0.5
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.98099416531167,
+      "baseline_score": 1.0,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "agent_orchestration_001",
+      "variant_decode_tokens_per_second": 138.24379481730298,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 146.25754846972848,
+      "baseline_score": 1.0,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "coding_agent_002",
+      "variant_decode_tokens_per_second": 140.6500952452097,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.80431644802573,
+      "baseline_score": 1.0,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "coding_agent_003",
+      "variant_decode_tokens_per_second": 142.0025219177166,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.35911811804206,
+      "baseline_score": 1.0,
+      "category": "eval_design",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "eval_design_005",
+      "variant_decode_tokens_per_second": 142.56120712683838,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.85169123906266,
+      "baseline_score": 1.0,
+      "category": "local_system_ops",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "local_system_ops_007",
+      "variant_decode_tokens_per_second": 143.95792116306163,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.5674129705046,
+      "baseline_score": 1.0,
+      "category": "model_ops",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "model_ops_003",
+      "variant_decode_tokens_per_second": 140.00090811399858,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.85938772417018,
+      "baseline_score": 1.0,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "personalization_memory_001",
+      "variant_decode_tokens_per_second": 140.69422550700168,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.9317443706322,
+      "baseline_score": 1.0,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "personalization_memory_003",
+      "variant_decode_tokens_per_second": 139.86002919058828,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.17349014678956,
+      "baseline_score": 0.6666666666666666,
+      "category": "code_review",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.3333333333333333,
+      "task_id": "code_review_005",
+      "variant_decode_tokens_per_second": 141.80464155950565,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.8732275613787,
+      "baseline_score": 0.3333333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.3333333333333333,
+      "task_id": "instruction_following_006",
+      "variant_decode_tokens_per_second": 144.72272154636624,
+      "variant_score": 0.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.58156743895995,
+      "baseline_score": 0.6666666666666666,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.3333333333333333,
+      "task_id": "personalization_memory_006",
+      "variant_decode_tokens_per_second": 135.30453861053857,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.4630500902651,
+      "baseline_score": 0.6666666666666666,
+      "category": "social_support",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.3333333333333333,
+      "task_id": "social_support_003",
+      "variant_decode_tokens_per_second": 143.73330103590123,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.51470983985035,
+      "baseline_score": 0.6666666666666666,
+      "category": "social_support",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.3333333333333333,
+      "task_id": "social_support_005",
+      "variant_decode_tokens_per_second": 144.35926728663298,
+      "variant_score": 0.3333333333333333
+    }
+  ],
+  "positive_tasks": [
+    {
+      "baseline_decode_tokens_per_second": 144.9876683360814,
+      "baseline_score": 0.0,
+      "category": "social_support",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.6666666666666666,
+      "task_id": "social_support_004",
+      "variant_decode_tokens_per_second": 143.35586839138531,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.8711521581305,
+      "baseline_score": 0.6666666666666666,
+      "category": "code_review",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "code_review_007",
+      "variant_decode_tokens_per_second": 143.61159665508075,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.800176748898,
+      "baseline_score": 0.6666666666666666,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "coding_agent_003",
+      "variant_decode_tokens_per_second": 143.98546122455878,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 140.0845601344812,
+      "baseline_score": 0.6666666666666666,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "coding_agent_005",
+      "variant_decode_tokens_per_second": 143.95913876155774,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.04867465258909,
+      "baseline_score": 0.6666666666666666,
+      "category": "eval_design",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "eval_design_005",
+      "variant_decode_tokens_per_second": 147.22369786125046,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.3458018629428,
+      "baseline_score": 0.6666666666666666,
+      "category": "eval_design",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "eval_design_008",
+      "variant_decode_tokens_per_second": 147.7151403737285,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.5331100073437,
+      "baseline_score": 0.6666666666666666,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "expert_surgery_005",
+      "variant_decode_tokens_per_second": 143.91488179129365,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.63668060000322,
+      "baseline_score": 0.6666666666666666,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "instruction_following_005",
+      "variant_decode_tokens_per_second": 144.85091752394635,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.55374240715614,
+      "baseline_score": 0.6666666666666666,
+      "category": "model_ops",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "model_ops_008",
+      "variant_decode_tokens_per_second": 143.87565105134397,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.52230087803204,
+      "baseline_score": 0.6666666666666666,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "routine_monitoring_003",
+      "variant_decode_tokens_per_second": 144.7560728336621,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.00887019349008,
+      "baseline_score": 0.6666666666666666,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "routine_monitoring_008",
+      "variant_decode_tokens_per_second": 141.99753913767015,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 139.04844960978684,
+      "baseline_score": 0.6666666666666666,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "tool_recovery_002",
+      "variant_decode_tokens_per_second": 141.82818390313395,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.09844048531653,
+      "baseline_score": 0.3333333333333333,
+      "category": "code_review",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.3333333333333333,
+      "task_id": "code_review_005",
+      "variant_decode_tokens_per_second": 144.08096019985138,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.87842960900724,
+      "baseline_score": 0.3333333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.3333333333333333,
+      "task_id": "instruction_following_004",
+      "variant_decode_tokens_per_second": 144.97953645756635,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.8505578859981,
+      "baseline_score": 0.3333333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.3333333333333333,
+      "task_id": "instruction_following_007",
+      "variant_decode_tokens_per_second": 144.302242478879,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.6540235935226,
+      "baseline_score": 0.3333333333333333,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.3333333333333333,
+      "task_id": "personalization_memory_008",
+      "variant_decode_tokens_per_second": 144.25996316338615,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.02163057062938,
+      "baseline_score": 0.3333333333333333,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.3333333333333333,
+      "task_id": "routine_monitoring_004",
+      "variant_decode_tokens_per_second": 144.20728354937387,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.08994540657184,
+      "baseline_score": 0.3333333333333333,
+      "category": "social_support",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.3333333333333333,
+      "task_id": "social_support_006",
+      "variant_decode_tokens_per_second": 144.76465319227697,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.76165195233224,
+      "baseline_score": 0.5,
+      "category": "personal_research",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.25,
+      "task_id": "personal_research_003",
+      "variant_decode_tokens_per_second": 145.3397656533528,
+      "variant_score": 0.75
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.23727598063823,
+      "baseline_score": 0.5,
+      "category": "personal_research",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.25,
+      "task_id": "personal_research_006",
+      "variant_decode_tokens_per_second": 143.2951731173377,
+      "variant_score": 0.75
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.70759081701993,
+      "baseline_score": 0.0,
+      "category": "social_support",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.6666666666666666,
+      "task_id": "social_support_006",
+      "variant_decode_tokens_per_second": 143.80510854959437,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.53076716554287,
+      "baseline_score": 0.6666666666666666,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.33333333333333337,
+      "task_id": "agent_orchestration_007",
+      "variant_decode_tokens_per_second": 137.55321494597942,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.60609416491278,
+      "baseline_score": 0.6666666666666666,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.33333333333333337,
+      "task_id": "coding_agent_008",
+      "variant_decode_tokens_per_second": 142.14238156146405,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.13559760928788,
+      "baseline_score": 0.6666666666666666,
+      "category": "eval_design",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.33333333333333337,
+      "task_id": "eval_design_004",
+      "variant_decode_tokens_per_second": 142.75666864233924,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.11979298354044,
+      "baseline_score": 0.6666666666666666,
+      "category": "eval_design",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.33333333333333337,
+      "task_id": "eval_design_007",
+      "variant_decode_tokens_per_second": 144.4531447227107,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.494065029535,
+      "baseline_score": 0.6666666666666666,
+      "category": "model_ops",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.33333333333333337,
+      "task_id": "model_ops_004",
+      "variant_decode_tokens_per_second": 139.0278373404563,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.53532690936356,
+      "baseline_score": 0.6666666666666666,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.33333333333333337,
+      "task_id": "routine_monitoring_008",
+      "variant_decode_tokens_per_second": 140.62775775587707,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.32019809707475,
+      "baseline_score": 0.6666666666666666,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.33333333333333337,
+      "task_id": "tool_recovery_002",
+      "variant_decode_tokens_per_second": 140.88950724877552,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.90277706992268,
+      "baseline_score": 0.3333333333333333,
+      "category": "code_review",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.3333333333333333,
+      "task_id": "code_review_003",
+      "variant_decode_tokens_per_second": 137.12318002447935,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.14431944997253,
+      "baseline_score": 0.3333333333333333,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.3333333333333333,
+      "task_id": "expert_surgery_008",
+      "variant_decode_tokens_per_second": 142.60849504188582,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.83642728595026,
+      "baseline_score": 0.3333333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.3333333333333333,
+      "task_id": "instruction_following_002",
+      "variant_decode_tokens_per_second": 144.39959920215006,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.91850091257592,
+      "baseline_score": 0.0,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.3333333333333333,
+      "task_id": "instruction_following_003",
+      "variant_decode_tokens_per_second": 143.8584879812079,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.7793449473689,
+      "baseline_score": 0.3333333333333333,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.3333333333333333,
+      "task_id": "personalization_memory_004",
+      "variant_decode_tokens_per_second": 140.20082397355768,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.79762583838962,
+      "baseline_score": 0.3333333333333333,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.3333333333333333,
+      "task_id": "routine_monitoring_003",
+      "variant_decode_tokens_per_second": 141.99527778511282,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.97867162384006,
+      "baseline_score": 0.3333333333333333,
+      "category": "social_support",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.3333333333333333,
+      "task_id": "social_support_002",
+      "variant_decode_tokens_per_second": 143.20557635085777,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 147.00159404853548,
+      "baseline_score": 0.25,
+      "category": "personal_research",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.25,
+      "task_id": "personal_research_007",
+      "variant_decode_tokens_per_second": 141.94007512748536,
+      "variant_score": 0.5
+    }
+  ],
+  "schema_version": 1,
+  "summary": [
+    {
+      "baseline_decode_tokens_per_second": 142.5539018668833,
+      "baseline_mean_score": 0.7596153846153846,
+      "config": "balanced_reasoning_off",
+      "delta_decode_tokens_per_second": 2.052563440381732,
+      "delta_mean_score": 0.01201923076923077,
+      "tasks": 104,
+      "variant_decode_tokens_per_second": 144.60646530726504,
+      "variant_mean_score": 0.7716346153846154
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.51953853192393,
+      "baseline_mean_score": 0.7435897435897435,
+      "config": "balanced_reasoning_on",
+      "delta_decode_tokens_per_second": -3.0146770103312974,
+      "delta_mean_score": 0.00721153846153846,
+      "tasks": 104,
+      "variant_decode_tokens_per_second": 141.50486152159263,
+      "variant_mean_score": 0.750801282051282
+    }
+  ],
+  "tasks": [
+    {
+      "baseline_decode_tokens_per_second": 142.81456138304628,
+      "baseline_score": 1.0,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "agent_orchestration_001",
+      "variant_decode_tokens_per_second": 143.51895822120915,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.7926747727394,
+      "baseline_score": 1.0,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "agent_orchestration_002",
+      "variant_decode_tokens_per_second": 142.8760929097952,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.46715037665024,
+      "baseline_score": 1.0,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "agent_orchestration_003",
+      "variant_decode_tokens_per_second": 144.07040455787936,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.19139247901532,
+      "baseline_score": 1.0,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "agent_orchestration_004",
+      "variant_decode_tokens_per_second": 141.74686172032472,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.99945788439385,
+      "baseline_score": 0.6666666666666666,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "agent_orchestration_005",
+      "variant_decode_tokens_per_second": 143.51270727778143,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.35280211006844,
+      "baseline_score": 1.0,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "agent_orchestration_006",
+      "variant_decode_tokens_per_second": 146.2203620036096,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.30465256446703,
+      "baseline_score": 0.6666666666666666,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "agent_orchestration_007",
+      "variant_decode_tokens_per_second": 144.99035663096782,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.4085318070888,
+      "baseline_score": 1.0,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "agent_orchestration_008",
+      "variant_decode_tokens_per_second": 145.2816100802295,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.96893811702384,
+      "baseline_score": 0.6666666666666666,
+      "category": "code_review",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "code_review_001",
+      "variant_decode_tokens_per_second": 144.87309540271394,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.87656808638985,
+      "baseline_score": 0.6666666666666666,
+      "category": "code_review",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "code_review_002",
+      "variant_decode_tokens_per_second": 144.69857109383096,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.25703895508025,
+      "baseline_score": 0.6666666666666666,
+      "category": "code_review",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "code_review_003",
+      "variant_decode_tokens_per_second": 143.91053635456902,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.69739949318858,
+      "baseline_score": 0.6666666666666666,
+      "category": "code_review",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "code_review_004",
+      "variant_decode_tokens_per_second": 144.52396129854782,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.09844048531653,
+      "baseline_score": 0.3333333333333333,
+      "category": "code_review",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.3333333333333333,
+      "task_id": "code_review_005",
+      "variant_decode_tokens_per_second": 144.08096019985138,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.52610900159274,
+      "baseline_score": 0.6666666666666666,
+      "category": "code_review",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "code_review_006",
+      "variant_decode_tokens_per_second": 143.7126163228097,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.8711521581305,
+      "baseline_score": 0.6666666666666666,
+      "category": "code_review",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "code_review_007",
+      "variant_decode_tokens_per_second": 143.61159665508075,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.77677715463219,
+      "baseline_score": 0.6666666666666666,
+      "category": "code_review",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "code_review_008",
+      "variant_decode_tokens_per_second": 144.04492975894183,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.15249014524352,
+      "baseline_score": 1.0,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "coding_agent_001",
+      "variant_decode_tokens_per_second": 145.5566150965485,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.07419750545228,
+      "baseline_score": 1.0,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "coding_agent_002",
+      "variant_decode_tokens_per_second": 144.41011463577593,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.800176748898,
+      "baseline_score": 0.6666666666666666,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "coding_agent_003",
+      "variant_decode_tokens_per_second": 143.98546122455878,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.87733272714848,
+      "baseline_score": 1.0,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "coding_agent_004",
+      "variant_decode_tokens_per_second": 143.50806527462834,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 140.0845601344812,
+      "baseline_score": 0.6666666666666666,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "coding_agent_005",
+      "variant_decode_tokens_per_second": 143.95913876155774,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.4258469455711,
+      "baseline_score": 0.6666666666666666,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "coding_agent_006",
+      "variant_decode_tokens_per_second": 146.02005721013379,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 146.219742843974,
+      "baseline_score": 0.6666666666666666,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "coding_agent_007",
+      "variant_decode_tokens_per_second": 143.67466295604274,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.77149841594698,
+      "baseline_score": 1.0,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "coding_agent_008",
+      "variant_decode_tokens_per_second": 146.17312494335792,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.88538977630276,
+      "baseline_score": 1.0,
+      "category": "eval_design",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "eval_design_001",
+      "variant_decode_tokens_per_second": 146.53824657901822,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.78128422926324,
+      "baseline_score": 1.0,
+      "category": "eval_design",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "eval_design_002",
+      "variant_decode_tokens_per_second": 147.83187585036882,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.23925365898617,
+      "baseline_score": 1.0,
+      "category": "eval_design",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "eval_design_003",
+      "variant_decode_tokens_per_second": 147.58759829652445,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.97686916193743,
+      "baseline_score": 0.6666666666666666,
+      "category": "eval_design",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "eval_design_004",
+      "variant_decode_tokens_per_second": 147.8416750854287,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.04867465258909,
+      "baseline_score": 0.6666666666666666,
+      "category": "eval_design",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "eval_design_005",
+      "variant_decode_tokens_per_second": 147.22369786125046,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 140.4924460939086,
+      "baseline_score": 1.0,
+      "category": "eval_design",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "eval_design_006",
+      "variant_decode_tokens_per_second": 146.6480477315462,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.30437293508987,
+      "baseline_score": 1.0,
+      "category": "eval_design",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "eval_design_007",
+      "variant_decode_tokens_per_second": 147.2832616632107,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.3458018629428,
+      "baseline_score": 0.6666666666666666,
+      "category": "eval_design",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "eval_design_008",
+      "variant_decode_tokens_per_second": 147.7151403737285,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.40337173519544,
+      "baseline_score": 1.0,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "expert_surgery_001",
+      "variant_decode_tokens_per_second": 144.85226835119258,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.2384546354035,
+      "baseline_score": 1.0,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "expert_surgery_002",
+      "variant_decode_tokens_per_second": 143.30921029869123,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.1074472694655,
+      "baseline_score": 1.0,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "expert_surgery_003",
+      "variant_decode_tokens_per_second": 143.41680796916725,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 140.92733502382976,
+      "baseline_score": 1.0,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "expert_surgery_004",
+      "variant_decode_tokens_per_second": 145.30733132345918,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.5331100073437,
+      "baseline_score": 0.6666666666666666,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "expert_surgery_005",
+      "variant_decode_tokens_per_second": 143.91488179129365,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.9432791146982,
+      "baseline_score": 0.6666666666666666,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "expert_surgery_006",
+      "variant_decode_tokens_per_second": 142.92340703804157,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.51313069346656,
+      "baseline_score": 0.3333333333333333,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "expert_surgery_007",
+      "variant_decode_tokens_per_second": 144.71172024890416,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.70173701529848,
+      "baseline_score": 0.6666666666666666,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "expert_surgery_008",
+      "variant_decode_tokens_per_second": 145.12519466793356,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 140.59928377070736,
+      "baseline_score": 0.3333333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "instruction_following_001",
+      "variant_decode_tokens_per_second": 145.4913011516785,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.96621365013303,
+      "baseline_score": 0.6666666666666666,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.3333333333333333,
+      "task_id": "instruction_following_002",
+      "variant_decode_tokens_per_second": 144.07826440060555,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 140.90903944069177,
+      "baseline_score": 0.3333333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "instruction_following_003",
+      "variant_decode_tokens_per_second": 143.3024467994656,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.87842960900724,
+      "baseline_score": 0.3333333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.3333333333333333,
+      "task_id": "instruction_following_004",
+      "variant_decode_tokens_per_second": 144.97953645756635,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.63668060000322,
+      "baseline_score": 0.6666666666666666,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "instruction_following_005",
+      "variant_decode_tokens_per_second": 144.85091752394635,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 139.6957195070062,
+      "baseline_score": 0.3333333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "instruction_following_006",
+      "variant_decode_tokens_per_second": 144.2177253858585,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.8505578859981,
+      "baseline_score": 0.3333333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.3333333333333333,
+      "task_id": "instruction_following_007",
+      "variant_decode_tokens_per_second": 144.302242478879,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 140.03777962456422,
+      "baseline_score": 0.6666666666666666,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.6666666666666666,
+      "task_id": "instruction_following_008",
+      "variant_decode_tokens_per_second": 144.908643891555,
+      "variant_score": 0.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.41143481975948,
+      "baseline_score": 1.0,
+      "category": "local_system_ops",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "local_system_ops_001",
+      "variant_decode_tokens_per_second": 146.56472598200784,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.77409474287163,
+      "baseline_score": 1.0,
+      "category": "local_system_ops",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "local_system_ops_002",
+      "variant_decode_tokens_per_second": 146.03584963223545,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.00125309955217,
+      "baseline_score": 1.0,
+      "category": "local_system_ops",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "local_system_ops_003",
+      "variant_decode_tokens_per_second": 148.155151789385,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.51634736925328,
+      "baseline_score": 0.6666666666666666,
+      "category": "local_system_ops",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "local_system_ops_004",
+      "variant_decode_tokens_per_second": 145.48840457415542,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.33573745201258,
+      "baseline_score": 1.0,
+      "category": "local_system_ops",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "local_system_ops_005",
+      "variant_decode_tokens_per_second": 146.0114809371343,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.34291933799378,
+      "baseline_score": 1.0,
+      "category": "local_system_ops",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "local_system_ops_006",
+      "variant_decode_tokens_per_second": 148.29572417404398,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.94578379178708,
+      "baseline_score": 1.0,
+      "category": "local_system_ops",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "local_system_ops_007",
+      "variant_decode_tokens_per_second": 147.69414515348595,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.9667621964788,
+      "baseline_score": 1.0,
+      "category": "local_system_ops",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "local_system_ops_008",
+      "variant_decode_tokens_per_second": 147.91020457705807,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.90381742975018,
+      "baseline_score": 1.0,
+      "category": "model_ops",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "model_ops_001",
+      "variant_decode_tokens_per_second": 143.80365430207905,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 140.71568528538734,
+      "baseline_score": 1.0,
+      "category": "model_ops",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "model_ops_002",
+      "variant_decode_tokens_per_second": 144.84464483350294,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.3965040801375,
+      "baseline_score": 1.0,
+      "category": "model_ops",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "model_ops_003",
+      "variant_decode_tokens_per_second": 142.64120491217506,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.32337455586583,
+      "baseline_score": 1.0,
+      "category": "model_ops",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "model_ops_004",
+      "variant_decode_tokens_per_second": 142.59750026582034,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.27777647680873,
+      "baseline_score": 1.0,
+      "category": "model_ops",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "model_ops_005",
+      "variant_decode_tokens_per_second": 144.06161451508734,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.68247324837222,
+      "baseline_score": 0.6666666666666666,
+      "category": "model_ops",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.3333333333333333,
+      "task_id": "model_ops_006",
+      "variant_decode_tokens_per_second": 142.86481495095933,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.6184200802534,
+      "baseline_score": 1.0,
+      "category": "model_ops",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "model_ops_007",
+      "variant_decode_tokens_per_second": 145.0945690432202,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.55374240715614,
+      "baseline_score": 0.6666666666666666,
+      "category": "model_ops",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "model_ops_008",
+      "variant_decode_tokens_per_second": 143.87565105134397,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.9903257258072,
+      "baseline_score": 0.75,
+      "category": "personal_research",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "personal_research_001",
+      "variant_decode_tokens_per_second": 144.78934817280566,
+      "variant_score": 0.75
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.4953965466282,
+      "baseline_score": 0.75,
+      "category": "personal_research",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "personal_research_002",
+      "variant_decode_tokens_per_second": 145.64175695612454,
+      "variant_score": 0.75
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.76165195233224,
+      "baseline_score": 0.5,
+      "category": "personal_research",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.25,
+      "task_id": "personal_research_003",
+      "variant_decode_tokens_per_second": 145.3397656533528,
+      "variant_score": 0.75
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.73004088153752,
+      "baseline_score": 0.5,
+      "category": "personal_research",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "personal_research_004",
+      "variant_decode_tokens_per_second": 145.80938705485502,
+      "variant_score": 0.5
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.07261321620553,
+      "baseline_score": 0.75,
+      "category": "personal_research",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "personal_research_005",
+      "variant_decode_tokens_per_second": 145.40272325933435,
+      "variant_score": 0.75
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.23727598063823,
+      "baseline_score": 0.5,
+      "category": "personal_research",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.25,
+      "task_id": "personal_research_006",
+      "variant_decode_tokens_per_second": 143.2951731173377,
+      "variant_score": 0.75
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.2674785469568,
+      "baseline_score": 0.5,
+      "category": "personal_research",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "personal_research_007",
+      "variant_decode_tokens_per_second": 145.57309466685626,
+      "variant_score": 0.5
+    },
+    {
+      "baseline_decode_tokens_per_second": 140.91118294938087,
+      "baseline_score": 0.75,
+      "category": "personal_research",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.25,
+      "task_id": "personal_research_008",
+      "variant_decode_tokens_per_second": 144.41413392581302,
+      "variant_score": 0.5
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.08651785419895,
+      "baseline_score": 0.6666666666666666,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "personalization_memory_001",
+      "variant_decode_tokens_per_second": 145.31044957744615,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.85802356601764,
+      "baseline_score": 1.0,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "personalization_memory_002",
+      "variant_decode_tokens_per_second": 145.09937900681285,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.28381020308095,
+      "baseline_score": 1.0,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "personalization_memory_003",
+      "variant_decode_tokens_per_second": 140.52289620315673,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.56856897336098,
+      "baseline_score": 0.3333333333333333,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "personalization_memory_004",
+      "variant_decode_tokens_per_second": 141.12259769793374,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.10916153951908,
+      "baseline_score": 0.3333333333333333,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "personalization_memory_005",
+      "variant_decode_tokens_per_second": 141.59294694358292,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.65050858401378,
+      "baseline_score": 1.0,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "personalization_memory_006",
+      "variant_decode_tokens_per_second": 144.10678595401518,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.82964321171698,
+      "baseline_score": 1.0,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.6666666666666667,
+      "task_id": "personalization_memory_007",
+      "variant_decode_tokens_per_second": 142.8678723325111,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.6540235935226,
+      "baseline_score": 0.3333333333333333,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.3333333333333333,
+      "task_id": "personalization_memory_008",
+      "variant_decode_tokens_per_second": 144.25996316338615,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.12009888139343,
+      "baseline_score": 1.0,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "routine_monitoring_001",
+      "variant_decode_tokens_per_second": 144.78230813228436,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.78805186430532,
+      "baseline_score": 1.0,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "routine_monitoring_002",
+      "variant_decode_tokens_per_second": 144.19147825855813,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.52230087803204,
+      "baseline_score": 0.6666666666666666,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "routine_monitoring_003",
+      "variant_decode_tokens_per_second": 144.7560728336621,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.02163057062938,
+      "baseline_score": 0.3333333333333333,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.3333333333333333,
+      "task_id": "routine_monitoring_004",
+      "variant_decode_tokens_per_second": 144.20728354937387,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.79395016553835,
+      "baseline_score": 0.6666666666666666,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "routine_monitoring_005",
+      "variant_decode_tokens_per_second": 144.92886561058165,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.0361378641121,
+      "baseline_score": 0.3333333333333333,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "routine_monitoring_006",
+      "variant_decode_tokens_per_second": 144.2506586539508,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 140.945397584179,
+      "baseline_score": 0.6666666666666666,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "routine_monitoring_007",
+      "variant_decode_tokens_per_second": 145.51328727244746,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.00887019349008,
+      "baseline_score": 0.6666666666666666,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "routine_monitoring_008",
+      "variant_decode_tokens_per_second": 141.99753913767015,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.39072454875813,
+      "baseline_score": 1.0,
+      "category": "social_support",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "social_support_001",
+      "variant_decode_tokens_per_second": 143.51211922080472,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.7202748686775,
+      "baseline_score": 0.6666666666666666,
+      "category": "social_support",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "social_support_002",
+      "variant_decode_tokens_per_second": 143.70626008239879,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.363155605852,
+      "baseline_score": 0.6666666666666666,
+      "category": "social_support",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "social_support_003",
+      "variant_decode_tokens_per_second": 145.32619769281618,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.9876683360814,
+      "baseline_score": 0.0,
+      "category": "social_support",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.6666666666666666,
+      "task_id": "social_support_004",
+      "variant_decode_tokens_per_second": 143.35586839138531,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.25363787436146,
+      "baseline_score": 0.3333333333333333,
+      "category": "social_support",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "social_support_005",
+      "variant_decode_tokens_per_second": 144.88401853211482,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.08994540657184,
+      "baseline_score": 0.3333333333333333,
+      "category": "social_support",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.3333333333333333,
+      "task_id": "social_support_006",
+      "variant_decode_tokens_per_second": 144.76465319227697,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.27056351092384,
+      "baseline_score": 0.3333333333333333,
+      "category": "social_support",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "social_support_007",
+      "variant_decode_tokens_per_second": 143.42085881960756,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.6513662979053,
+      "baseline_score": 1.0,
+      "category": "social_support",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "social_support_008",
+      "variant_decode_tokens_per_second": 144.19739728670223,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 139.42260786368686,
+      "baseline_score": 1.0,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "tool_recovery_001",
+      "variant_decode_tokens_per_second": 144.72668584660727,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 139.04844960978684,
+      "baseline_score": 0.6666666666666666,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.33333333333333337,
+      "task_id": "tool_recovery_002",
+      "variant_decode_tokens_per_second": 141.82818390313395,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 140.70556856098173,
+      "baseline_score": 1.0,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "tool_recovery_003",
+      "variant_decode_tokens_per_second": 145.14437843581223,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 135.38861740449607,
+      "baseline_score": 1.0,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "tool_recovery_004",
+      "variant_decode_tokens_per_second": 142.82874538935556,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 140.1919247194751,
+      "baseline_score": 1.0,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "tool_recovery_005",
+      "variant_decode_tokens_per_second": 141.86635173916636,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.14216687922206,
+      "baseline_score": 1.0,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_off",
+      "delta_score": -0.33333333333333337,
+      "task_id": "tool_recovery_006",
+      "variant_decode_tokens_per_second": 143.40043229983982,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.7509946983944,
+      "baseline_score": 1.0,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "tool_recovery_007",
+      "variant_decode_tokens_per_second": 143.71489276269133,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 140.89418602127964,
+      "baseline_score": 1.0,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_off",
+      "delta_score": 0.0,
+      "task_id": "tool_recovery_008",
+      "variant_decode_tokens_per_second": 145.3579367232435,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.98099416531167,
+      "baseline_score": 1.0,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "agent_orchestration_001",
+      "variant_decode_tokens_per_second": 138.24379481730298,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.61955437166353,
+      "baseline_score": 1.0,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "agent_orchestration_002",
+      "variant_decode_tokens_per_second": 138.54168067775896,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.58372398387192,
+      "baseline_score": 1.0,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "agent_orchestration_003",
+      "variant_decode_tokens_per_second": 138.90881684691178,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.66687282209628,
+      "baseline_score": 1.0,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "agent_orchestration_004",
+      "variant_decode_tokens_per_second": 137.73047631114574,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.48240870235608,
+      "baseline_score": 1.0,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "agent_orchestration_005",
+      "variant_decode_tokens_per_second": 139.50912191018477,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.3740608060657,
+      "baseline_score": 1.0,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "agent_orchestration_006",
+      "variant_decode_tokens_per_second": 137.81310293232534,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.53076716554287,
+      "baseline_score": 0.6666666666666666,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.33333333333333337,
+      "task_id": "agent_orchestration_007",
+      "variant_decode_tokens_per_second": 137.55321494597942,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.3943257683454,
+      "baseline_score": 1.0,
+      "category": "agent_orchestration",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "agent_orchestration_008",
+      "variant_decode_tokens_per_second": 136.617469749057,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 147.42886134334395,
+      "baseline_score": 0.6666666666666666,
+      "category": "code_review",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "code_review_001",
+      "variant_decode_tokens_per_second": 141.72705824923608,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.6350345828394,
+      "baseline_score": 0.6666666666666666,
+      "category": "code_review",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "code_review_002",
+      "variant_decode_tokens_per_second": 142.96863982885355,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.90277706992268,
+      "baseline_score": 0.3333333333333333,
+      "category": "code_review",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.3333333333333333,
+      "task_id": "code_review_003",
+      "variant_decode_tokens_per_second": 137.12318002447935,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.87393690525198,
+      "baseline_score": 0.6666666666666666,
+      "category": "code_review",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "code_review_004",
+      "variant_decode_tokens_per_second": 138.02615506997927,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.17349014678956,
+      "baseline_score": 0.6666666666666666,
+      "category": "code_review",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.3333333333333333,
+      "task_id": "code_review_005",
+      "variant_decode_tokens_per_second": 141.80464155950565,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.62462335244663,
+      "baseline_score": 0.6666666666666666,
+      "category": "code_review",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "code_review_006",
+      "variant_decode_tokens_per_second": 140.85876835963956,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.57571909709245,
+      "baseline_score": 0.6666666666666666,
+      "category": "code_review",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "code_review_007",
+      "variant_decode_tokens_per_second": 140.87309188014913,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.80875844019118,
+      "baseline_score": 0.6666666666666666,
+      "category": "code_review",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "code_review_008",
+      "variant_decode_tokens_per_second": 139.86308957564873,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 146.54518472346746,
+      "baseline_score": 1.0,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "coding_agent_001",
+      "variant_decode_tokens_per_second": 142.31822745572052,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 146.25754846972848,
+      "baseline_score": 1.0,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "coding_agent_002",
+      "variant_decode_tokens_per_second": 140.6500952452097,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.80431644802573,
+      "baseline_score": 1.0,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "coding_agent_003",
+      "variant_decode_tokens_per_second": 142.0025219177166,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 146.213234117509,
+      "baseline_score": 1.0,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "coding_agent_004",
+      "variant_decode_tokens_per_second": 141.0377558072296,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.1726824563308,
+      "baseline_score": 0.6666666666666666,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "coding_agent_005",
+      "variant_decode_tokens_per_second": 140.0560224089636,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 146.33875242862285,
+      "baseline_score": 0.6666666666666666,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "coding_agent_006",
+      "variant_decode_tokens_per_second": 139.99746288122824,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 146.18052649429814,
+      "baseline_score": 1.0,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "coding_agent_007",
+      "variant_decode_tokens_per_second": 141.47495320091093,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.60609416491278,
+      "baseline_score": 0.6666666666666666,
+      "category": "coding_agent",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.33333333333333337,
+      "task_id": "coding_agent_008",
+      "variant_decode_tokens_per_second": 142.14238156146405,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.0616426984412,
+      "baseline_score": 1.0,
+      "category": "eval_design",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "eval_design_001",
+      "variant_decode_tokens_per_second": 143.90157357213874,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.54674397855052,
+      "baseline_score": 0.6666666666666666,
+      "category": "eval_design",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "eval_design_002",
+      "variant_decode_tokens_per_second": 143.7268022976077,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.10314320899386,
+      "baseline_score": 1.0,
+      "category": "eval_design",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "eval_design_003",
+      "variant_decode_tokens_per_second": 144.5811234941643,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.13559760928788,
+      "baseline_score": 0.6666666666666666,
+      "category": "eval_design",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.33333333333333337,
+      "task_id": "eval_design_004",
+      "variant_decode_tokens_per_second": 142.75666864233924,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.35911811804206,
+      "baseline_score": 1.0,
+      "category": "eval_design",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "eval_design_005",
+      "variant_decode_tokens_per_second": 142.56120712683838,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.37240744814056,
+      "baseline_score": 1.0,
+      "category": "eval_design",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "eval_design_006",
+      "variant_decode_tokens_per_second": 143.85942237070213,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.11979298354044,
+      "baseline_score": 0.6666666666666666,
+      "category": "eval_design",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.33333333333333337,
+      "task_id": "eval_design_007",
+      "variant_decode_tokens_per_second": 144.4531447227107,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.1602375613676,
+      "baseline_score": 1.0,
+      "category": "eval_design",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "eval_design_008",
+      "variant_decode_tokens_per_second": 144.48565094939715,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.09376514697496,
+      "baseline_score": 1.0,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "expert_surgery_001",
+      "variant_decode_tokens_per_second": 138.61469791048245,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.27602727486783,
+      "baseline_score": 1.0,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "expert_surgery_002",
+      "variant_decode_tokens_per_second": 140.36756223637053,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.50810223761007,
+      "baseline_score": 1.0,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "expert_surgery_003",
+      "variant_decode_tokens_per_second": 140.7921763624015,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.47256977573645,
+      "baseline_score": 1.0,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "expert_surgery_004",
+      "variant_decode_tokens_per_second": 140.42051542238073,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.2233742582859,
+      "baseline_score": 0.6666666666666666,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "expert_surgery_005",
+      "variant_decode_tokens_per_second": 139.56973837172868,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.617978147745,
+      "baseline_score": 0.6666666666666666,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "expert_surgery_006",
+      "variant_decode_tokens_per_second": 140.45401219233432,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.23975117013356,
+      "baseline_score": 0.0,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "expert_surgery_007",
+      "variant_decode_tokens_per_second": 141.50221887318784,
+      "variant_score": 0.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.14431944997253,
+      "baseline_score": 0.3333333333333333,
+      "category": "expert_surgery",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.3333333333333333,
+      "task_id": "expert_surgery_008",
+      "variant_decode_tokens_per_second": 142.60849504188582,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.9375667830162,
+      "baseline_score": 0.3333333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "instruction_following_001",
+      "variant_decode_tokens_per_second": 142.92538325293955,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.83642728595026,
+      "baseline_score": 0.3333333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.3333333333333333,
+      "task_id": "instruction_following_002",
+      "variant_decode_tokens_per_second": 144.39959920215006,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.91850091257592,
+      "baseline_score": 0.0,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.3333333333333333,
+      "task_id": "instruction_following_003",
+      "variant_decode_tokens_per_second": 143.8584879812079,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.12527301208664,
+      "baseline_score": 0.3333333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "instruction_following_004",
+      "variant_decode_tokens_per_second": 143.48650674965373,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.80893925556413,
+      "baseline_score": 0.6666666666666666,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "instruction_following_005",
+      "variant_decode_tokens_per_second": 144.5534252677862,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.8732275613787,
+      "baseline_score": 0.3333333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.3333333333333333,
+      "task_id": "instruction_following_006",
+      "variant_decode_tokens_per_second": 144.72272154636624,
+      "variant_score": 0.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.61167094501704,
+      "baseline_score": 0.3333333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "instruction_following_007",
+      "variant_decode_tokens_per_second": 144.22890236258036,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.584265976322,
+      "baseline_score": 0.3333333333333333,
+      "category": "instruction_following",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "instruction_following_008",
+      "variant_decode_tokens_per_second": 144.16626474328058,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.22973118580808,
+      "baseline_score": 1.0,
+      "category": "local_system_ops",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "local_system_ops_001",
+      "variant_decode_tokens_per_second": 143.52892735970747,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.6158372876438,
+      "baseline_score": 1.0,
+      "category": "local_system_ops",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "local_system_ops_002",
+      "variant_decode_tokens_per_second": 143.0047076639032,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.14951667584157,
+      "baseline_score": 1.0,
+      "category": "local_system_ops",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "local_system_ops_003",
+      "variant_decode_tokens_per_second": 144.83819754110922,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.1238890775689,
+      "baseline_score": 0.6666666666666666,
+      "category": "local_system_ops",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "local_system_ops_004",
+      "variant_decode_tokens_per_second": 144.767138272577,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.15404730890464,
+      "baseline_score": 1.0,
+      "category": "local_system_ops",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "local_system_ops_005",
+      "variant_decode_tokens_per_second": 142.63641060676184,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.92753623188406,
+      "baseline_score": 1.0,
+      "category": "local_system_ops",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "local_system_ops_006",
+      "variant_decode_tokens_per_second": 143.8879551418399,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.85169123906266,
+      "baseline_score": 1.0,
+      "category": "local_system_ops",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "local_system_ops_007",
+      "variant_decode_tokens_per_second": 143.95792116306163,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.20157253920718,
+      "baseline_score": 1.0,
+      "category": "local_system_ops",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "local_system_ops_008",
+      "variant_decode_tokens_per_second": 142.84399802912384,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.88881967899582,
+      "baseline_score": 1.0,
+      "category": "model_ops",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "model_ops_001",
+      "variant_decode_tokens_per_second": 137.62188575044988,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.04590421542602,
+      "baseline_score": 1.0,
+      "category": "model_ops",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "model_ops_002",
+      "variant_decode_tokens_per_second": 137.83626305006587,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.5674129705046,
+      "baseline_score": 1.0,
+      "category": "model_ops",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "model_ops_003",
+      "variant_decode_tokens_per_second": 140.00090811399858,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.494065029535,
+      "baseline_score": 0.6666666666666666,
+      "category": "model_ops",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.33333333333333337,
+      "task_id": "model_ops_004",
+      "variant_decode_tokens_per_second": 139.0278373404563,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.59482948599512,
+      "baseline_score": 1.0,
+      "category": "model_ops",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "model_ops_005",
+      "variant_decode_tokens_per_second": 140.9248765153079,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.4394724485683,
+      "baseline_score": 0.3333333333333333,
+      "category": "model_ops",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "model_ops_006",
+      "variant_decode_tokens_per_second": 140.27341891704475,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.83250224326488,
+      "baseline_score": 1.0,
+      "category": "model_ops",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "model_ops_007",
+      "variant_decode_tokens_per_second": 139.89712068287375,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.19284120582014,
+      "baseline_score": 1.0,
+      "category": "model_ops",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "model_ops_008",
+      "variant_decode_tokens_per_second": 141.16011702593713,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 148.14155465978308,
+      "baseline_score": 0.75,
+      "category": "personal_research",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "personal_research_001",
+      "variant_decode_tokens_per_second": 141.52471567173086,
+      "variant_score": 0.75
+    },
+    {
+      "baseline_decode_tokens_per_second": 149.22292270510624,
+      "baseline_score": 0.5,
+      "category": "personal_research",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "personal_research_002",
+      "variant_decode_tokens_per_second": 144.11001136559943,
+      "variant_score": 0.5
+    },
+    {
+      "baseline_decode_tokens_per_second": 148.53016643124081,
+      "baseline_score": 0.75,
+      "category": "personal_research",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "personal_research_003",
+      "variant_decode_tokens_per_second": 144.0744492384211,
+      "variant_score": 0.75
+    },
+    {
+      "baseline_decode_tokens_per_second": 148.20455602493692,
+      "baseline_score": 0.5,
+      "category": "personal_research",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "personal_research_004",
+      "variant_decode_tokens_per_second": 144.2596295193394,
+      "variant_score": 0.5
+    },
+    {
+      "baseline_decode_tokens_per_second": 147.74909272219986,
+      "baseline_score": 0.75,
+      "category": "personal_research",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "personal_research_005",
+      "variant_decode_tokens_per_second": 142.23439078915763,
+      "variant_score": 0.75
+    },
+    {
+      "baseline_decode_tokens_per_second": 146.90981681642106,
+      "baseline_score": 1.0,
+      "category": "personal_research",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.5,
+      "task_id": "personal_research_006",
+      "variant_decode_tokens_per_second": 140.43508719155167,
+      "variant_score": 0.5
+    },
+    {
+      "baseline_decode_tokens_per_second": 147.00159404853548,
+      "baseline_score": 0.25,
+      "category": "personal_research",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.25,
+      "task_id": "personal_research_007",
+      "variant_decode_tokens_per_second": 141.94007512748536,
+      "variant_score": 0.5
+    },
+    {
+      "baseline_decode_tokens_per_second": 147.30446040169414,
+      "baseline_score": 0.5,
+      "category": "personal_research",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "personal_research_008",
+      "variant_decode_tokens_per_second": 141.0145770089754,
+      "variant_score": 0.5
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.85938772417018,
+      "baseline_score": 1.0,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "personalization_memory_001",
+      "variant_decode_tokens_per_second": 140.69422550700168,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.06533824907012,
+      "baseline_score": 0.6666666666666666,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "personalization_memory_002",
+      "variant_decode_tokens_per_second": 140.61606132113909,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.9317443706322,
+      "baseline_score": 1.0,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.33333333333333337,
+      "task_id": "personalization_memory_003",
+      "variant_decode_tokens_per_second": 139.86002919058828,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.7793449473689,
+      "baseline_score": 0.3333333333333333,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.3333333333333333,
+      "task_id": "personalization_memory_004",
+      "variant_decode_tokens_per_second": 140.20082397355768,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.46167547497063,
+      "baseline_score": 0.3333333333333333,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "personalization_memory_005",
+      "variant_decode_tokens_per_second": 140.37993830301713,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.58156743895995,
+      "baseline_score": 0.6666666666666666,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.3333333333333333,
+      "task_id": "personalization_memory_006",
+      "variant_decode_tokens_per_second": 135.30453861053857,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.19162545848883,
+      "baseline_score": 0.6666666666666666,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "personalization_memory_007",
+      "variant_decode_tokens_per_second": 138.5767975396397,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.4531627035066,
+      "baseline_score": 0.3333333333333333,
+      "category": "personalization_memory",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "personalization_memory_008",
+      "variant_decode_tokens_per_second": 138.51716375095012,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.66709845765163,
+      "baseline_score": 1.0,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "routine_monitoring_001",
+      "variant_decode_tokens_per_second": 141.9397707438736,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.14117749381072,
+      "baseline_score": 1.0,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "routine_monitoring_002",
+      "variant_decode_tokens_per_second": 140.92431384468253,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.79762583838962,
+      "baseline_score": 0.3333333333333333,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.3333333333333333,
+      "task_id": "routine_monitoring_003",
+      "variant_decode_tokens_per_second": 141.99527778511282,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.33092807760346,
+      "baseline_score": 0.6666666666666666,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "routine_monitoring_004",
+      "variant_decode_tokens_per_second": 141.44508204575214,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.77707012291822,
+      "baseline_score": 0.6666666666666666,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "routine_monitoring_005",
+      "variant_decode_tokens_per_second": 142.75120044006383,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.29923083617035,
+      "baseline_score": 0.6666666666666666,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "routine_monitoring_006",
+      "variant_decode_tokens_per_second": 140.53225410641596,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.38409592858545,
+      "baseline_score": 0.6666666666666666,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "routine_monitoring_007",
+      "variant_decode_tokens_per_second": 141.7054664943957,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.53532690936356,
+      "baseline_score": 0.6666666666666666,
+      "category": "routine_monitoring",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.33333333333333337,
+      "task_id": "routine_monitoring_008",
+      "variant_decode_tokens_per_second": 140.62775775587707,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.3163656529152,
+      "baseline_score": 1.0,
+      "category": "social_support",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "social_support_001",
+      "variant_decode_tokens_per_second": 143.28044782975596,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.97867162384006,
+      "baseline_score": 0.3333333333333333,
+      "category": "social_support",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.3333333333333333,
+      "task_id": "social_support_002",
+      "variant_decode_tokens_per_second": 143.20557635085777,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.4630500902651,
+      "baseline_score": 0.6666666666666666,
+      "category": "social_support",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.3333333333333333,
+      "task_id": "social_support_003",
+      "variant_decode_tokens_per_second": 143.73330103590123,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 142.80442881355577,
+      "baseline_score": 0.3333333333333333,
+      "category": "social_support",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "social_support_004",
+      "variant_decode_tokens_per_second": 144.90332225390213,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.51470983985035,
+      "baseline_score": 0.6666666666666666,
+      "category": "social_support",
+      "config": "balanced_reasoning_on",
+      "delta_score": -0.3333333333333333,
+      "task_id": "social_support_005",
+      "variant_decode_tokens_per_second": 144.35926728663298,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.70759081701993,
+      "baseline_score": 0.0,
+      "category": "social_support",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.6666666666666666,
+      "task_id": "social_support_006",
+      "variant_decode_tokens_per_second": 143.80510854959437,
+      "variant_score": 0.6666666666666666
+    },
+    {
+      "baseline_decode_tokens_per_second": 144.27086435932569,
+      "baseline_score": 0.3333333333333333,
+      "category": "social_support",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "social_support_007",
+      "variant_decode_tokens_per_second": 143.37743869407853,
+      "variant_score": 0.3333333333333333
+    },
+    {
+      "baseline_decode_tokens_per_second": 141.12588505093603,
+      "baseline_score": 1.0,
+      "category": "social_support",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "social_support_008",
+      "variant_decode_tokens_per_second": 143.91376065131996,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 143.64439456233362,
+      "baseline_score": 1.0,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "tool_recovery_001",
+      "variant_decode_tokens_per_second": 138.4656251764809,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.32019809707475,
+      "baseline_score": 0.6666666666666666,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.33333333333333337,
+      "task_id": "tool_recovery_002",
+      "variant_decode_tokens_per_second": 140.88950724877552,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 146.2614488148728,
+      "baseline_score": 1.0,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "tool_recovery_003",
+      "variant_decode_tokens_per_second": 142.23784181138004,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.37765940770188,
+      "baseline_score": 1.0,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "tool_recovery_004",
+      "variant_decode_tokens_per_second": 140.25251078115824,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 146.27095567360922,
+      "baseline_score": 1.0,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "tool_recovery_005",
+      "variant_decode_tokens_per_second": 142.37330168327193,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 146.42120975193689,
+      "baseline_score": 1.0,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "tool_recovery_006",
+      "variant_decode_tokens_per_second": 141.91282878194244,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 146.157610528572,
+      "baseline_score": 1.0,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "tool_recovery_007",
+      "variant_decode_tokens_per_second": 142.64188974965415,
+      "variant_score": 1.0
+    },
+    {
+      "baseline_decode_tokens_per_second": 145.86204074504374,
+      "baseline_score": 1.0,
+      "category": "tool_recovery",
+      "config": "balanced_reasoning_on",
+      "delta_score": 0.0,
+      "task_id": "tool_recovery_008",
+      "variant_decode_tokens_per_second": 140.44452595260805,
+      "variant_score": 1.0
+    }
+  ],
+  "tasks_file": "data/personal_agent_bank/tasks.jsonl",
+  "variant": "data/surgery_experiments/incremental_ladder/evals/step_001_L08_E054/20260620T_step001_full/results.json"
+}
